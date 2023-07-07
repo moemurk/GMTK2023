@@ -1,32 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameStateManager : Singleton<GameStateManager>
 {
     public int changeDuration;
+    public TextMeshProUGUI countDown;
     private bool isPlaying = true;
     private bool canChange = true;
     private StateName stateName = StateName.IWanna;
+    private float remainTimeInState;
 
     void Start()
     {
-        StartCoroutine(StartChangingState());
+        remainTimeInState = changeDuration;
+    }
+
+    void Update()
+    {
+        if (isPlaying) {
+            if (canChange) {
+                remainTimeInState -= Time.deltaTime;
+                countDown.SetText(decimal.Round(decimal.Parse(remainTimeInState.ToString()), 1).ToString());
+                if (remainTimeInState < 0) {
+                    ChangeState();
+                }
+            }
+        }
     }
 
     public StateName GetState()
     {
         return stateName;
-    }
-
-    IEnumerator StartChangingState()
-    {
-        yield return new WaitForSeconds(changeDuration);
-        while (canChange) {
-            // change
-            ChangeState();
-            yield return new WaitForSeconds(changeDuration);
-        }
     }
 
     void ChangeState() {
@@ -41,5 +48,6 @@ public class GameStateManager : Singleton<GameStateManager>
             // change g
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().SwitchGravity(true);
         }
+        remainTimeInState = changeDuration;
     }
 }

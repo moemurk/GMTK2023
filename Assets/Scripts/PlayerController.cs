@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
     private void ControlByIsaac()
     {
         Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
-        Vector2 moveDelta = new Vector2(horizontalMove, verticalMove).normalized * runSpeed * Time.fixedDeltaTime * 10f;
+        Vector2 moveDelta = new Vector2(horizontalMove, verticalMove).normalized * moveSpeed_Isaac * Time.fixedDeltaTime * 10f;
 
         
         Vector3 targetVelociry = moveDelta;

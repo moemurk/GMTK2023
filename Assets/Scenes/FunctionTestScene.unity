@@ -760,7 +760,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   canDoubleJump: 1
-  moveSpeed_Isaac: 0
+  moveSpeed_Isaac: 40
   hp_Isaac: 0
 --- !u!61 &1653980543
 BoxCollider2D:
