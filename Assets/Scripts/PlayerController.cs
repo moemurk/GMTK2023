@@ -96,7 +96,13 @@ public class PlayerController : MonoBehaviour
 
     private void ControlByIsaac()
     {
+        Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
+        Vector2 moveDelta = new Vector2(horizontalMove, verticalMove).normalized * runSpeed * Time.fixedDeltaTime * 10f;
+
         
+        Vector3 targetVelociry = moveDelta;
+        rigidbody2D.velocity = Vector3.SmoothDamp(rigidbody2D.velocity, targetVelociry, ref velocity, movementSmoothing, Mathf.Infinity, Time.fixedDeltaTime);
+        // turn direction
     }
 
     private void GetInput()
@@ -114,5 +120,14 @@ public class PlayerController : MonoBehaviour
         Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+    }
+
+    public void SwitchGravity(bool on) {
+        Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
+        if (on) {
+            rigidbody2D.gravityScale = 3.0f;
+        } else {
+            rigidbody2D.gravityScale = 0f;
+        }
     }
 }

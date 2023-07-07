@@ -33,9 +33,13 @@ public class GameStateManager : Singleton<GameStateManager>
         if (stateName == StateName.IWanna) {
             Debug.Log("Changing to Isaac");
             stateName = StateName.Isaac;
+            // change g
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().SwitchGravity(false);
         } else {
             Debug.Log("Changing to Iwanna");
             stateName = StateName.IWanna;
+            // change g
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().SwitchGravity(true);
         }
     }
 }
