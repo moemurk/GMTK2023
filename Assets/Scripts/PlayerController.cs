@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     public bool canDoubleJump;
     [Header("Isaac")]
     public float moveSpeed_Isaac;
-    public int hp_Isaac;
     /****************/
     private bool canMove = true;
     private float horizontalMove = 0f;
