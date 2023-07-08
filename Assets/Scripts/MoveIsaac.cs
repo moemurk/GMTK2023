@@ -35,6 +35,9 @@ public class MoveIsaac : MonoBehaviour
             return;
         }
         switch(moveType) {
+            case MovetypeISaac.Incline:
+                MoveIncline();
+                break;
             case MovetypeISaac.Rush:
                 MoveRush();
                 break;
@@ -54,6 +57,7 @@ public class MoveIsaac : MonoBehaviour
     {
         if (isRushing) {
             Vector3 targetPos = rushDirection * rushSpeed * Time.deltaTime * 10f + transform.position;
+            Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
             if (Vector3.Distance(transform.position, rushStartPoint) >= rushingDistance) {
                 Debug.Log("End Rush");
@@ -73,15 +77,31 @@ public class MoveIsaac : MonoBehaviour
         }
     }
 
+    private void MoveIncline()
+    {
+        Vector3 targetDir = (new Vector3(GameStateManager.Instance.player.transform.position.x, GameStateManager.Instance.player.transform.position.y + 1f, 0f) - transform.position).normalized;
+        Vector3 targetPos = targetDir * moveSpeed * 10f * Time.deltaTime + transform.position;
+        Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
+        transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
+    }
+
     private void MoveVertical()
     {
-        Vector3 targetPos = new Vector3(transform.position.x, GameStateManager.Instance.player.transform.position.y + 1f, 0f);
+        //Vector3 targetPos = new Vector3(transform.position.x, GameStateManager.Instance.player.transform.position.y + 1f, 0f);
+
+        Vector3 targetDir = (new Vector3(transform.position.x, GameStateManager.Instance.player.transform.position.y + 1f, 0f) - transform.position).normalized;
+        Vector3 targetPos = targetDir * moveSpeed * 10f * Time.deltaTime + transform.position;
+        Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
     }
 
     private void MoveHorizontal()
     {
-        Vector3 targetPos = new Vector3(GameStateManager.Instance.player.transform.position.x, transform.position.y, 0f);
+        //Vector3 targetPos = new Vector3(GameStateManager.Instance.player.transform.position.x, transform.position.y, 0f);
+
+        Vector3 targetDir = (new Vector3(GameStateManager.Instance.player.transform.position.x, transform.position.y, 0f) - transform.position).normalized;
+        Vector3 targetPos = targetDir * moveSpeed * 10f * Time.deltaTime + transform.position;
+        Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
     }
 
