@@ -20,10 +20,11 @@ public class MoveIWanna : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void InitState()
     {
-        
+        Debug.Log("IWanna InitState");
+        velocity = Vector3.zero;
+        patrolIndex = 0;
     }
 
     public void Move()

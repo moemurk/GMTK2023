@@ -65,4 +65,18 @@ public class GameStateManager : Singleton<GameStateManager>
             ChangeState();
         }
     }
+
+    public void Dead()
+    {
+        Debug.Log("Dead");
+        Spawn();
+    }
+
+    public void Spawn()
+    {
+        Teleport t = player.GetComponent<PlayerController>().nowTeleport; 
+        t.InitEnemies();
+        SceneManager.Instance.Teleport(t.target.transform, t.canChangeStateNextLevel, t.targetCameraPos);
+        player.GetComponent<Unit>().InitState();
+    }
 }

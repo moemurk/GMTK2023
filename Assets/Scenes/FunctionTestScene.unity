@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 115852177}
-  canChangeStateNextLevel: 0
+  canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 2033675677}
   targetCameraPos_Isaac: {fileID: 575290975}
 --- !u!212 &115852178
@@ -711,6 +711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerType_IWanna: 0
   triggerType_Isaac: 1
+  damage: 5
 --- !u!61 &475317377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1111,6 +1112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerType_IWanna: 2
   triggerType_Isaac: 1
+  damage: 5
 --- !u!1 &893265658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,7 +1705,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 1}
   serializedVersion: 2
-  m_Radius: 30
+  m_Radius: 7.49
 --- !u!1 &1170455842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,6 +2120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 100
   slice: {fileID: 1623959377}
+  coolTime: 0.3
+  img: {fileID: 1586222962}
 --- !u!1 &1720501224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,6 +2176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerType_IWanna: 2
   triggerType_Isaac: 1
+  damage: 5
 --- !u!114 &1720501227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2418,6 +2423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerType_IWanna: 2
   triggerType_Isaac: 1
+  damage: 5
 --- !u!114 &2057961617
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,14 +6,16 @@ public class Hit : MonoBehaviour
 {
     public TriggerType triggerType_IWanna;
     public TriggerType triggerType_Isaac;
+    public int damage;
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
         TriggerType curType = GameStateManager.Instance.GetState() == StateName.IWanna ? triggerType_IWanna : triggerType_Isaac;
-        Debug.Log(curType);
-        if (!col.CompareTag("Player")) {
+        Unit unit = col.GetComponent<Unit>();
+        if (!unit) {
             return;
         }
+        Debug.Log(curType);
         switch(curType) {
             case TriggerType.Damage:
                 TriggerDamage(col);
@@ -33,11 +35,17 @@ public class Hit : MonoBehaviour
     void TriggerDamage(Collider2D col)
     {
         Debug.Log("Damage");
+        if (col.GetComponent<Unit>().TakeDamage(damage)) {
+            GameStateManager.Instance.Dead();
+        }
+        
     }
 
     void TriggerOneHit(Collider2D col)
     {
         Debug.Log("OneHit");
+        col.GetComponent<Unit>().TakeDamage(10000);
+        GameStateManager.Instance.Dead();
     }
 
     void TriggerItem(Collider2D col)

@@ -23,10 +23,15 @@ public class MoveIsaac : MonoBehaviour
         isRushing = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void InitState()
     {
-        
+        Debug.Log("Isaac InitState");
+        velocity = Vector3.zero;
+        activated = false;
+        remainCoolTime = coolTime;
+        isRushing = false;
+        rushDirection = Vector3.zero;
+        rushStartPoint = Vector3.zero;
     }
 
     public void Move()

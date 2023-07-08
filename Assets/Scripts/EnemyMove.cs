@@ -12,6 +12,7 @@ public class EnemyMove : MonoBehaviour
     void Start()
     {
         originPos = transform.position;
+        ownLevel.RegisterEnemy(this);
     }
 
     // Update is called once per frame
@@ -31,5 +32,13 @@ public class EnemyMove : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void InitState()
+    {
+        Debug.Log("InitState");
+        transform.position = originPos;
+        moveIWanna?.InitState();
+        moveIsaac?.InitState();
     }
 }
