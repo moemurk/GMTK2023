@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     private bool facingRight = true;
     private bool alreadyDoubleJump = false;
+    public Teleport nowTeleport;
+    private bool canBeTeleport = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +61,6 @@ public class PlayerController : MonoBehaviour
         onGround = false;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.2f, groundLayer);
         if (colliders.Length > 0) {
-            Debug.Log("OnGround!");
             onGround = true;
             alreadyDoubleJump = false;
             if (!wasOnGround) {
@@ -106,6 +107,12 @@ public class PlayerController : MonoBehaviour
 
     private void GetInput()
     {
+        if (!canMove) {
+            horizontalMove = 0;
+            verticalMove = 0;
+            jumpInput = false;
+            return;
+        }
         horizontalMove = Input.GetAxisRaw("Horizontal");
         verticalMove = Input.GetAxisRaw("Vertical");
         if (Input.GetButtonDown("Jump")) {
@@ -128,5 +135,15 @@ public class PlayerController : MonoBehaviour
         } else {
             rigidbody2D.gravityScale = 0f;
         }
+    }
+
+    public bool CanBeTeleport()
+    {
+        return canBeTeleport;
+    }
+
+    public void SetMoveState(bool can)
+    {
+        canMove = can;
     }
 }

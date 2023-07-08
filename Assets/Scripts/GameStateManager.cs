@@ -9,7 +9,7 @@ public class GameStateManager : Singleton<GameStateManager>
     public int changeDuration;
     public TextMeshProUGUI countDown;
     private bool isPlaying = true;
-    private bool canChange = true;
+    private bool canChange = false;
     private StateName stateName = StateName.IWanna;
     private float remainTimeInState;
 
@@ -27,6 +27,8 @@ public class GameStateManager : Singleton<GameStateManager>
                 if (remainTimeInState < 0) {
                     ChangeState();
                 }
+            } else {
+                countDown.SetText("I Wanna");
             }
         }
     }
@@ -38,16 +40,23 @@ public class GameStateManager : Singleton<GameStateManager>
 
     void ChangeState() {
         if (stateName == StateName.IWanna) {
-            Debug.Log("Changing to Isaac");
             stateName = StateName.Isaac;
             // change g
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().SwitchGravity(false);
         } else {
-            Debug.Log("Changing to Iwanna");
             stateName = StateName.IWanna;
             // change g
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().SwitchGravity(true);
         }
         remainTimeInState = changeDuration;
+    }
+
+    public void SetStateCanChange(bool can)
+    {
+        canChange = can;
+        // Default state should be I wanna
+        if (!canChange && stateName == StateName.Isaac) {
+            ChangeState();
+        }
     }
 }
