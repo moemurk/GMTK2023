@@ -7,11 +7,20 @@ public class MoveIsaac : MonoBehaviour
     public MovetypeISaac moveType;
     public float moveSpeed;
     public float movementSmoothing;
+    private bool activated = false;
     private Vector3 velocity;
+    [Header("Rush")] public float coolTime;
+    public float rushingDistance;
+    public float rushSpeed;
+    private float remainCoolTime;
+    private bool isRushing;
+    private Vector3 rushDirection;
+    private Vector3 rushStartPoint;
     // Start is called before the first frame update
     void Start()
     {
-        
+        remainCoolTime = coolTime;
+        isRushing = false;
     }
 
     // Update is called once per frame
@@ -22,7 +31,13 @@ public class MoveIsaac : MonoBehaviour
 
     public void Move()
     {
+        if (!activated) {
+            return;
+        }
         switch(moveType) {
+            case MovetypeISaac.Rush:
+                MoveRush();
+                break;
             case MovetypeISaac.Vertical:
                 MoveVertical();
                 break;
@@ -32,6 +47,29 @@ public class MoveIsaac : MonoBehaviour
             case MovetypeISaac.None:
             default:
                 break;
+        }
+    }
+
+    private void MoveRush()
+    {
+        if (isRushing) {
+            Vector3 targetPos = rushDirection * rushSpeed * Time.deltaTime * 10f + transform.position;
+            transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
+            if (Vector3.Distance(transform.position, rushStartPoint) >= rushingDistance) {
+                Debug.Log("End Rush");
+                isRushing = false;
+                remainCoolTime = coolTime;
+            }
+        } else {
+            // only cal time when rushing is over
+            remainCoolTime -= Time.deltaTime;
+            if (remainCoolTime <= 0f) {
+                Debug.Log("Start to Rush!");
+                remainCoolTime = coolTime;
+                isRushing = true;
+                rushDirection = (GameStateManager.Instance.player.transform.position - transform.position).normalized;
+                rushStartPoint = transform.position;
+            }
         }
     }
 
@@ -45,5 +83,10 @@ public class MoveIsaac : MonoBehaviour
     {
         Vector3 targetPos = new Vector3(GameStateManager.Instance.player.transform.position.x, transform.position.y, 0f);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
+    }
+
+    public void SetEnemyActivated(bool a)
+    {
+        activated = a;
     }
 }

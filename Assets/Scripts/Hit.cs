@@ -11,6 +11,9 @@ public class Hit : MonoBehaviour
     {
         TriggerType curType = GameStateManager.Instance.GetState() == StateName.IWanna ? triggerType_IWanna : triggerType_Isaac;
         Debug.Log(curType);
+        if (!col.CompareTag("Player")) {
+            return;
+        }
         switch(curType) {
             case TriggerType.Damage:
                 TriggerDamage(col);

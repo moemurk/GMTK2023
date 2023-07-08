@@ -7,10 +7,11 @@ public class EnemyMove : MonoBehaviour
     public MoveIWanna moveIWanna;
     public MoveIsaac moveIsaac;
     public Teleport ownLevel;
+    private Vector3 originPos;
     // Start is called before the first frame update
     void Start()
     {
-        
+        originPos = transform.position;
     }
 
     // Update is called once per frame

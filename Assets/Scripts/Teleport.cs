@@ -7,6 +7,7 @@ public class Teleport : MonoBehaviour
     public Teleport target;
     public bool canChangeStateNextLevel;
     public Transform targetCameraPos;
+    public Transform targetCameraPos_Isaac;
 
     private void OnTriggerEnter2D(Collider2D col)
     {

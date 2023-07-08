@@ -7,6 +7,7 @@ public enum StateName
 public enum MovetypeIWanna
 {
     None,
+    Patrol,
 }
 
 public enum MovetypeISaac
@@ -14,6 +15,8 @@ public enum MovetypeISaac
     None,
     Vertical,
     Horizontal,
+    Incline,
+    Rush,
 }
 
 public enum TriggerType {
