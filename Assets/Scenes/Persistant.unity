@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59006b77f775e8d4cb4befc9eba4f8de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeDuration: 3
+  changeDuration: 4
   countDown: {fileID: 259094618}
   player: {fileID: 0}
 --- !u!1 &1787999143
