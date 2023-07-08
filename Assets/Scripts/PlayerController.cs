@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour
     public bool canDoubleJump;
     [Header("Isaac")]
     public float moveSpeed_Isaac;
+    [Header("Other")]
+    public float fireCoolTime;
+    public GameObject bulletPrefabs;
+    public Transform shootingPoint;
     /****************/
     private bool canMove = true;
     private float horizontalMove = 0f;
@@ -26,6 +30,8 @@ public class PlayerController : MonoBehaviour
     private bool alreadyDoubleJump = false;
     public Teleport nowTeleport;
     private bool canBeTeleport = true;
+    private float coolTime = 0;
+    private Vector3 facingDir = Vector3.right;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +41,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        coolTime -= Time.deltaTime;
+        if (coolTime < 0f ) {
+            coolTime = 0f;
+        }
         GetInput();
     }
 
@@ -75,9 +85,11 @@ public class PlayerController : MonoBehaviour
             if (moveDelta > 0 && !facingRight) {
                 // turn to right
                 Flip();
+                facingDir = Vector3.right;
             } else if (moveDelta < 0 && facingRight) {
                 // turn to left
                 Flip();
+                facingDir = Vector3.left;
             }
         }
         // jump
@@ -101,8 +113,28 @@ public class PlayerController : MonoBehaviour
 
         
         Vector3 targetVelociry = moveDelta;
+        float xDelta = Vector3.Dot(targetVelociry, Vector3.right);
+        float yDelta = Vector3.Dot(targetVelociry, Vector3.up);
         rigidbody2D.velocity = Vector3.SmoothDamp(rigidbody2D.velocity, targetVelociry, ref velocity, movementSmoothing, Mathf.Infinity, Time.fixedDeltaTime);
         // turn direction
+        if (horizontalMove == 0 && verticalMove == 0) {
+            return;
+        }
+        if (Mathf.Abs(xDelta) >= Mathf.Abs(yDelta)) {
+            // x direction
+            if (xDelta >= 0) {
+                facingDir = Vector3.right;
+            } else {
+                facingDir = Vector3.left;
+            }
+        } else {
+            // y direction
+            if (yDelta >= 0) {
+                facingDir = Vector3.up;
+            } else {
+                facingDir = Vector3.down;
+            }
+        }
     }
 
     private void GetInput()
@@ -117,6 +149,25 @@ public class PlayerController : MonoBehaviour
         verticalMove = Input.GetAxisRaw("Vertical");
         if (Input.GetButtonDown("Jump")) {
             jumpInput = true;
+        }
+        if (Input.GetButtonDown("Fire1")) {
+            Fire();
+        }
+    }
+
+    private void Fire()
+    {
+        if (coolTime > 0) {
+            return;
+        }
+        coolTime = fireCoolTime;
+        GameObject bullet = Instantiate(bulletPrefabs, shootingPoint);
+        bullet.transform.SetParent(null);
+        StateName gameState = GameStateManager.Instance.GetState();
+        if (gameState == StateName.Isaac) {
+            bullet.GetComponent<Bullet>().direction = facingDir;
+        } else {
+            bullet.GetComponent<Bullet>().direction = facingRight ? Vector3.right : Vector3.left;
         }
     }
 

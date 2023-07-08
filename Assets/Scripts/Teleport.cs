@@ -10,9 +10,7 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Trigger Enter");
         if (col.CompareTag("Player") && col.GetComponent<PlayerController>().nowTeleport != this) {
-            Debug.Log("comfirm player");
             col.GetComponent<PlayerController>().nowTeleport = target;
             SceneManager.Instance.Teleport(target.transform, canChangeStateNextLevel, targetCameraPos);
         }
