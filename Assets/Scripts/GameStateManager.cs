@@ -8,6 +8,7 @@ public class GameStateManager : Singleton<GameStateManager>
 {
     public int changeDuration;
     public TextMeshProUGUI countDown;
+    public GameObject player;
     private bool isPlaying = true;
     private bool canChange = false;
     private StateName stateName = StateName.IWanna;
@@ -16,6 +17,7 @@ public class GameStateManager : Singleton<GameStateManager>
     void Start()
     {
         remainTimeInState = changeDuration;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -42,11 +44,11 @@ public class GameStateManager : Singleton<GameStateManager>
         if (stateName == StateName.IWanna) {
             stateName = StateName.Isaac;
             // change g
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().SwitchGravity(false);
+            player.GetComponent<PlayerController>().SwitchGravity(false);
         } else {
             stateName = StateName.IWanna;
             // change g
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().SwitchGravity(true);
+            player.GetComponent<PlayerController>().SwitchGravity(true);
         }
         remainTimeInState = changeDuration;
     }

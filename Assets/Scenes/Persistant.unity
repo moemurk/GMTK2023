@@ -596,6 +596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changeDuration: 3
   countDown: {fileID: 259094618}
+  player: {fileID: 0}
 --- !u!1 &1787999143
 GameObject:
   m_ObjectHideFlags: 0
