@@ -35,5 +35,8 @@ public class Bullet : MonoBehaviour
             }
             Destroy(this.gameObject);
         }
+        if (col.gameObject.layer == 6) {
+            Destroy(gameObject);
+        }
     }
 }
