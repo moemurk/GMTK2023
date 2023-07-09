@@ -54,6 +54,7 @@ public class MoveIsaac : MonoBehaviour
                 break;
             case MovetypeISaac.None:
             default:
+                GetComponent<Animator>()?.SetBool("IsWalking", false);
                 break;
         }
     }
@@ -63,11 +64,13 @@ public class MoveIsaac : MonoBehaviour
         if (isRushing) {
             Vector3 targetPos = rushDirection * rushSpeed * Time.deltaTime * 10f + transform.position;
             Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
+            SetDirection(targetPos);
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
             if (Vector3.Distance(transform.position, rushStartPoint) >= rushingDistance) {
                 Debug.Log("End Rush");
                 isRushing = false;
                 remainCoolTime = coolTime;
+                GetComponent<Animator>()?.SetBool("IsWalking", false);
             }
         } else {
             // only cal time when rushing is over
@@ -78,6 +81,7 @@ public class MoveIsaac : MonoBehaviour
                 isRushing = true;
                 rushDirection = (GameStateManager.Instance.player.transform.position - transform.position).normalized;
                 rushStartPoint = transform.position;
+                GetComponent<Animator>()?.SetBool("IsWalking", true);
             }
         }
     }
@@ -87,7 +91,9 @@ public class MoveIsaac : MonoBehaviour
         Vector3 targetDir = (new Vector3(GameStateManager.Instance.player.transform.position.x, GameStateManager.Instance.player.transform.position.y + 1f, 0f) - transform.position).normalized;
         Vector3 targetPos = targetDir * moveSpeed * 10f * Time.deltaTime + transform.position;
         Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
+        SetDirection(targetPos);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
+        GetComponent<Animator>()?.SetBool("IsWalking", true);
     }
 
     private void MoveVertical()
@@ -97,7 +103,9 @@ public class MoveIsaac : MonoBehaviour
         Vector3 targetDir = (new Vector3(transform.position.x, GameStateManager.Instance.player.transform.position.y + 1f, 0f) - transform.position).normalized;
         Vector3 targetPos = targetDir * moveSpeed * 10f * Time.deltaTime + transform.position;
         Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
+        SetDirection(targetPos);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
+        GetComponent<Animator>()?.SetBool("IsWalking", true);
     }
 
     private void MoveHorizontal()
@@ -107,11 +115,24 @@ public class MoveIsaac : MonoBehaviour
         Vector3 targetDir = (new Vector3(GameStateManager.Instance.player.transform.position.x, transform.position.y, 0f) - transform.position).normalized;
         Vector3 targetPos = targetDir * moveSpeed * 10f * Time.deltaTime + transform.position;
         Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
+        SetDirection(targetPos);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
+        GetComponent<Animator>()?.SetBool("IsWalking", true);
     }
 
     public void SetEnemyActivated(bool a)
     {
         activated = a;
+    }
+
+    private void SetDirection(Vector3 targetPos)
+    {
+        if ((targetPos - transform.position).x >= 0) {
+            // right
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * -1, transform.localScale.y, transform.localScale.z);
+        } else {
+            // left
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
     }
 }

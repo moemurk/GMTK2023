@@ -26,3 +26,9 @@ public enum TriggerType {
     Item,
 }
 
+public enum Turn {
+    Left,
+    Right,
+    Up,
+    Down,
+}

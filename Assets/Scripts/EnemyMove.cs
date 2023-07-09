@@ -24,12 +24,15 @@ public class EnemyMove : MonoBehaviour
         StateName gameState = GameStateManager.Instance.GetState();
         switch(gameState) {
             case StateName.IWanna:
+                GetComponent<Animator>()?.SetBool("IsWalking", false);
                 moveIWanna?.Move();
                 break;
             case StateName.Isaac:
+                GetComponent<Animator>()?.SetBool("IsWalking", false);
                 moveIsaac?.Move();
                 break;
             default:
+                GetComponent<Animator>()?.SetBool("IsWalking", false);
                 break;
         }
     }

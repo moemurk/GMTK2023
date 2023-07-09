@@ -31,10 +31,11 @@ public class MoveIWanna : MonoBehaviour
     {
         switch(moveType) {
             case MovetypeIWanna.Patrol:
-            MovePatrol();
-            break;
+                MovePatrol();
+                break;
             case MovetypeIWanna.None:
             default:
+                GetComponent<Animator>()?.SetBool("IsWalking", false);
                 break;
         }
     }
@@ -44,6 +45,7 @@ public class MoveIWanna : MonoBehaviour
         // in pos
         // change target
         // move
+        Debug.Log("patroling");
         float distance = Vector2.Distance(new Vector2(transform.position.x, transform.position.y),
             new Vector2(patrolPoints[patrolIndex].position.x, patrolPoints[patrolIndex].position.y));
         if (distance <= stopThrottle) {
@@ -53,6 +55,19 @@ public class MoveIWanna : MonoBehaviour
             }
         }
         Vector3 targetPos = patrolPoints[patrolIndex].position;
+        SetDirection(targetPos);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
+        GetComponent<Animator>()?.SetBool("IsWalking", true);
+    }
+
+    private void SetDirection(Vector3 targetPos)
+    {
+        if ((targetPos - transform.position).x >= 0) {
+            // right
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * -1, transform.localScale.y, transform.localScale.z);
+        } else {
+            // left
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
     }
 }

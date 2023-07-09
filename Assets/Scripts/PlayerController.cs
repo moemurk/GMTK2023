@@ -125,16 +125,36 @@ public class PlayerController : MonoBehaviour
             // x direction
             if (xDelta >= 0) {
                 facingDir = Vector3.right;
+                TurnIsaac(Turn.Right);
             } else {
                 facingDir = Vector3.left;
+                TurnIsaac(Turn.Left);
             }
         } else {
             // y direction
             if (yDelta >= 0) {
                 facingDir = Vector3.up;
+                TurnIsaac(Turn.Up);
             } else {
                 facingDir = Vector3.down;
+                TurnIsaac(Turn.Down);
             }
+        }
+    }
+
+    private void TurnIsaac(Turn turn)
+    {
+        switch(turn) {
+            case Turn.Left:
+                break;
+            case Turn.Right:
+                break;
+            case Turn.Up:
+                break;
+            case Turn.Down:
+                break;
+            default:
+                break;
         }
     }
 
