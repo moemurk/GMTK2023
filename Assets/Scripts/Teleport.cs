@@ -9,27 +9,33 @@ public class Teleport : MonoBehaviour
     public Transform targetCameraPos;
     public Transform targetCameraPos_Isaac;
     public bool needKey;
-    public Sprite notOpen;
-    public Sprite open;
     public Teleport endPoint;
     private List<EnemyMove> enemies = new List<EnemyMove>();
     private bool hasKey = false;
+    private Animator animator;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         if (needKey) {
-            GetComponent<SpriteRenderer>().sprite = notOpen;
+            if (animator) {
+                animator.SetTrigger("InitState");
+            }
         } else {
-            GetComponent<SpriteRenderer>().sprite = open;
+            Debug.Log("needKey");
+            if (animator) {
+                animator.SetTrigger("Open");
+                Debug.Log("set Open");
+            }
         }
-        
     }
 
     public void GetKey()
     {
         hasKey = true;
-        // maybe Sprite Change?
-        GetComponent<SpriteRenderer>().sprite = open;
+        if (animator) {
+            animator.SetTrigger("Open");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -55,9 +61,14 @@ public class Teleport : MonoBehaviour
         endPoint?.InitEnemies();
         hasKey = false;
         if (needKey) {
-            GetComponent<SpriteRenderer>().sprite = notOpen;
+            if (animator) {
+                animator.SetTrigger("InitState");
+            }
         } else {
-            GetComponent<SpriteRenderer>().sprite = open;
+            if (animator) {
+                animator.SetTrigger("Open");
+                Debug.Log("set Open");
+            }
         }
         foreach (EnemyMove e in enemies) {
             e.gameObject.SetActive(true);

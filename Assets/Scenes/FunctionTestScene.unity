@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 115852178}
   - component: {fileID: 115852177}
   - component: {fileID: 115852176}
+  - component: {fileID: 115852180}
   m_Layer: 0
   m_Name: Tele2
   m_TagString: Untagged
@@ -209,6 +210,8 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 2033675677}
   targetCameraPos_Isaac: {fileID: 575290975}
+  needKey: 0
+  endPoint: {fileID: 2107175711}
 --- !u!212 &115852178
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -250,7 +253,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd06e642390aa1d429ab7db55edf8aab, type: 3}
   m_Color: {r: 0.9733329, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -278,6 +281,27 @@ Transform:
   m_Father: {fileID: 55373990}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &115852180
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115852175}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab82b0e419351f1438e561dd908aa4b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &120609779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,6 +1511,7 @@ GameObject:
   - component: {fileID: 893655829}
   - component: {fileID: 893655827}
   - component: {fileID: 893655828}
+  - component: {fileID: 893655831}
   m_Layer: 0
   m_Name: Tele1
   m_TagString: Untagged
@@ -1510,6 +1535,8 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 2033675677}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  endPoint: {fileID: 0}
 --- !u!58 &893655828
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1567,7 +1594,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd06e642390aa1d429ab7db55edf8aab, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1593,6 +1620,27 @@ Transform:
   m_Father: {fileID: 55373990}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &893655831
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893655826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab82b0e419351f1438e561dd908aa4b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &948565142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,6 +1805,7 @@ GameObject:
   - component: {fileID: 971957634}
   - component: {fileID: 971957633}
   - component: {fileID: 971957632}
+  - component: {fileID: 971957636}
   m_Layer: 0
   m_Name: Tele0
   m_TagString: Untagged
@@ -1796,6 +1845,8 @@ MonoBehaviour:
   canChangeStateNextLevel: 0
   targetCameraPos: {fileID: 1599734870}
   targetCameraPos_Isaac: {fileID: 2094118168}
+  needKey: 0
+  endPoint: {fileID: 893655827}
 --- !u!212 &971957634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1837,7 +1888,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd06e642390aa1d429ab7db55edf8aab, type: 3}
   m_Color: {r: 1, g: 0.9935299, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1865,6 +1916,27 @@ Transform:
   m_Father: {fileID: 55373990}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &971957636
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971957631}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab82b0e419351f1438e561dd908aa4b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1076375145
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,6 +3076,7 @@ GameObject:
   - component: {fileID: 2057961618}
   - component: {fileID: 2057961617}
   - component: {fileID: 2057961616}
+  - component: {fileID: 2057961622}
   m_Layer: 0
   m_Name: Enemy4
   m_TagString: Enemy
@@ -3107,7 +3180,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -3160,7 +3233,7 @@ SpriteRenderer:
   m_SortingLayerID: -140977995
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: -668325558, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3171,6 +3244,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2057961622
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057961614}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29d808903fe3cac40b3b84bb48e73f9e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2094118167
 GameObject:
   m_ObjectHideFlags: 0
@@ -3214,6 +3308,7 @@ GameObject:
   - component: {fileID: 2107175712}
   - component: {fileID: 2107175711}
   - component: {fileID: 2107175710}
+  - component: {fileID: 2107175714}
   m_Layer: 0
   m_Name: Tele3
   m_TagString: Untagged
@@ -3253,6 +3348,8 @@ MonoBehaviour:
   canChangeStateNextLevel: 0
   targetCameraPos: {fileID: 1599734870}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 1
+  endPoint: {fileID: 0}
 --- !u!212 &2107175712
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3294,7 +3391,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd06e642390aa1d429ab7db55edf8aab, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3320,6 +3417,27 @@ Transform:
   m_Father: {fileID: 55373990}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2107175714
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107175709}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab82b0e419351f1438e561dd908aa4b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2131921284
 GameObject:
   m_ObjectHideFlags: 0

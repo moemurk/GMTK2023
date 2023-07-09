@@ -137,6 +137,9 @@ public class MoveIsaac : MonoBehaviour
     public void SetEnemyActivated(bool a)
     {
         activated = a;
+        if (animator) {
+            animator.SetTrigger("Activate");
+        }
     }
 
     private void SetDirection(Vector3 targetPos)

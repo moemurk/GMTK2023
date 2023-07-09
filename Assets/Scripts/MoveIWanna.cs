@@ -49,7 +49,6 @@ public class MoveIWanna : MonoBehaviour
         // in pos
         // change target
         // move
-        Debug.Log("patroling");
         float distance = Vector2.Distance(new Vector2(transform.position.x, transform.position.y),
             new Vector2(patrolPoints[patrolIndex].position.x, patrolPoints[patrolIndex].position.y));
         if (distance <= stopThrottle) {

@@ -9,6 +9,7 @@ public class EnemyMove : MonoBehaviour
     public Teleport ownLevel;
     private Vector3 originPos;
     private Animator animator;
+    private bool canMove = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,9 @@ public class EnemyMove : MonoBehaviour
     void Update()
     {
         if (ownLevel != GameStateManager.Instance.player.GetComponent<PlayerController>().nowTeleport) {
+            return;
+        }
+        if (!canMove) {
             return;
         }
         StateName gameState = GameStateManager.Instance.GetState();
@@ -51,5 +55,21 @@ public class EnemyMove : MonoBehaviour
         transform.position = originPos;
         moveIWanna?.InitState();
         moveIsaac?.InitState();
+        if (animator) {
+            animator.SetTrigger("InitState");
+        }
     }
+
+    public void StopMove()
+    {
+        Debug.Log("StopMoving");
+        canMove = false;
+    }
+
+    public void StartMove()
+    {
+        Debug.Log("StartMoving");
+        canMove = true;
+    }
+    
 }
