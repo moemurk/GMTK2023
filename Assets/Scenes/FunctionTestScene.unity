@@ -581,8 +581,8 @@ GameObject:
   m_Component:
   - component: {fileID: 295877539}
   - component: {fileID: 295877538}
-  - component: {fileID: 295877537}
   - component: {fileID: 295877540}
+  - component: {fileID: 295877541}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -590,14 +590,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &295877537
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295877536}
-  m_Enabled: 1
 --- !u!20 &295877538
 Camera:
   m_ObjectHideFlags: 0
@@ -689,6 +681,14 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!81 &295877541
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295877536}
+  m_Enabled: 1
 --- !u!1 &330052968
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +780,7 @@ MonoBehaviour:
   moveType: 2
   moveSpeed: 30
   movementSmoothing: 0.2
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -934,7 +935,7 @@ MonoBehaviour:
   slice: {fileID: 120609781}
   coolTime: 0.2
   img: {fileID: 475317375}
-  curHp: 0
+  hideHpBarInIsaac: 0
 --- !u!1 &554461738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1267,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 30
   movementSmoothing: 0.2
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -2628,7 +2630,7 @@ MonoBehaviour:
   slice: {fileID: 1623959377}
   coolTime: 0.3
   img: {fileID: 1586222962}
-  curHp: 0
+  hideHpBarInIsaac: 0
 --- !u!1 &1720501224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2723,7 @@ MonoBehaviour:
   moveType: 4
   moveSpeed: 10
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 3
   rushingDistance: 10
   rushSpeed: 400
@@ -2926,6 +2929,7 @@ MonoBehaviour:
   moveType: 3
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -3196,6 +3200,7 @@ MonoBehaviour:
   moveType: 3
   moveSpeed: 30
   movementSmoothing: 0.1
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0

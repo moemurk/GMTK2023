@@ -82,6 +82,7 @@ public class PlayerController : MonoBehaviour
             alreadyDoubleJump = false;
             if (!wasOnGround) {
                 // land
+                AudioManager.Instance.Play("Land");
                 animator.SetBool("IsJumping", false);
             }
         }
