@@ -55,9 +55,11 @@ public class PlayerController : MonoBehaviour
         StateName gameState = GameStateManager.Instance.GetState();
         switch(gameState) {
             case StateName.IWanna:
+                animator.SetBool("IWanna", true);
                 ControlByIWanna();
                 break;
             case StateName.Isaac:
+                animator.SetBool("IWanna", false);
                 ControlByIsaac();
                 break;
             default:
@@ -80,11 +82,17 @@ public class PlayerController : MonoBehaviour
             alreadyDoubleJump = false;
             if (!wasOnGround) {
                 // land
+                animator.SetBool("IsJumping", false);
             }
         }
         // movement
         if (onGround || airControl) {
             float moveDelta = horizontalMove * runSpeed * Time.fixedDeltaTime * 10f;
+            if (Mathf.Abs(moveDelta) > 0f) {
+                animator.SetBool("IsWalking", true);
+            } else {
+                animator.SetBool("IsWalking", false);
+            }
             Vector3 targetVelociry = new Vector2(moveDelta, rigidbody2D.velocity.y);
             rigidbody2D.velocity = Vector3.SmoothDamp(rigidbody2D.velocity, targetVelociry, ref velocity, movementSmoothing, Mathf.Infinity, Time.fixedDeltaTime);
             if (moveDelta > 0 && !facingRight) {
@@ -102,9 +110,11 @@ public class PlayerController : MonoBehaviour
             jumpInput = false;
             if (onGround) {
                 onGround = false;
+                animator.SetBool("IsJumping", true);
                 rigidbody2D.AddForce(new Vector2(0f, jumpForce));
             } else if (!alreadyDoubleJump && canDoubleJump) {
                 alreadyDoubleJump = true;
+                animator.SetBool("IsJumping", true);
                 rigidbody2D.AddForce(new Vector2(0f, jumpForce));
             }
         }
@@ -115,6 +125,11 @@ public class PlayerController : MonoBehaviour
     {
         Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
         Vector2 moveDelta = new Vector2(horizontalMove, verticalMove).normalized * moveSpeed_Isaac * Time.fixedDeltaTime * 10f;
+        if (moveDelta.magnitude > 0f) {
+            animator.SetBool("IsWalking", true);
+        } else {
+            animator.SetBool("IsWalking", false);
+        }
 
         
         Vector3 targetVelociry = moveDelta;
@@ -184,6 +199,7 @@ public class PlayerController : MonoBehaviour
             horizontalMove = 0;
             verticalMove = 0;
             jumpInput = false;
+            animator.SetBool("IsWalking", false);
             return;
         }
         horizontalMove = Input.GetAxisRaw("Horizontal");
