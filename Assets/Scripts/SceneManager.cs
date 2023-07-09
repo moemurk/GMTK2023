@@ -26,6 +26,7 @@ public class SceneManager : Singleton<SceneManager>
         Camera.main.transform.position = targetCameraPos.position;
         Camera.main.transform.rotation = player.GetComponent<PlayerController>().nowTeleport.targetCameraPos.rotation;
         Camera.main.orthographic = true;
+        GameStateManager.Instance.InitState();
         //yield return OpenCurtain();
         player.GetComponent<PlayerController>().SetMoveState(true);
         yield return null;

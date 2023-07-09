@@ -20,6 +20,17 @@ public class GameStateManager : Singleton<GameStateManager>
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
+    public void InitState()
+    {
+        remainTimeInState = changeDuration;
+        stateName = StateName.IWanna;
+        // change g
+        player.GetComponent<PlayerController>().SwitchGravity(true);
+        Camera.main.transform.position = player.GetComponent<PlayerController>().nowTeleport.targetCameraPos.position;
+        Camera.main.transform.rotation = player.GetComponent<PlayerController>().nowTeleport.targetCameraPos.rotation;
+        Camera.main.orthographic = true;
+    }
+
     void Update()
     {
         if (isPlaying) {
