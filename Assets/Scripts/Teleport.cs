@@ -17,7 +17,12 @@ public class Teleport : MonoBehaviour
 
     void Start()
     {
-        GetComponent<SpriteRenderer>().sprite = notOpen;
+        if (needKey) {
+            GetComponent<SpriteRenderer>().sprite = notOpen;
+        } else {
+            GetComponent<SpriteRenderer>().sprite = open;
+        }
+        
     }
 
     public void GetKey()
@@ -49,7 +54,11 @@ public class Teleport : MonoBehaviour
         Debug.Log("InitEnemies");
         endPoint?.InitEnemies();
         hasKey = false;
-        GetComponent<SpriteRenderer>().sprite = notOpen;
+        if (needKey) {
+            GetComponent<SpriteRenderer>().sprite = notOpen;
+        } else {
+            GetComponent<SpriteRenderer>().sprite = open;
+        }
         foreach (EnemyMove e in enemies) {
             e.gameObject.SetActive(true);
             e.GetComponent<Unit>()?.InitState();
