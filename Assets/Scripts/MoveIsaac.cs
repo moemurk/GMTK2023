@@ -96,7 +96,7 @@ public class MoveIsaac : MonoBehaviour
 
     private void MoveIncline()
     {
-        Vector3 targetDir = (new Vector3(GameStateManager.Instance.player.transform.position.x, GameStateManager.Instance.player.transform.position.y + 1f, 0f) - transform.position).normalized;
+        Vector3 targetDir = (new Vector3(GameStateManager.Instance.player.transform.position.x, GameStateManager.Instance.player.transform.position.y, 0f) - transform.position).normalized;
         Vector3 targetPos = targetDir * moveSpeed * 10f * Time.deltaTime + transform.position;
         Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
         SetDirection(targetPos);
@@ -108,9 +108,9 @@ public class MoveIsaac : MonoBehaviour
 
     private void MoveVertical()
     {
-        //Vector3 targetPos = new Vector3(transform.position.x, GameStateManager.Instance.player.transform.position.y + 1f, 0f);
+        //Vector3 targetPos = new Vector3(transform.position.x, GameStateManager.Instance.player.transform.position.y, 0f);
 
-        Vector3 targetDir = (new Vector3(transform.position.x, GameStateManager.Instance.player.transform.position.y + 1f, 0f) - transform.position).normalized;
+        Vector3 targetDir = (new Vector3(transform.position.x, GameStateManager.Instance.player.transform.position.y, 0f) - transform.position).normalized;
         Vector3 targetPos = targetDir * moveSpeed * 10f * Time.deltaTime + transform.position;
         Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
         SetDirection(targetPos);

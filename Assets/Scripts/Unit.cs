@@ -53,7 +53,8 @@ public class Unit : MonoBehaviour
             return false;
         }
         remainCoolTime = coolTime;
-        img.color = Color.red;
+        //img.color = Color.red;
+        img.color = new Color(1.0f, 0.0f, 0.0f, 0.6f);
         curHp -= damage;
         if (curHp <= 0) {
             curHp = 0;
