@@ -49,6 +49,9 @@ public class MoveIWanna : MonoBehaviour
         // in pos
         // change target
         // move
+        if (Time.deltaTime > 0.1f) {
+            return;
+        }
         float distance = Vector2.Distance(new Vector2(transform.position.x, transform.position.y),
             new Vector2(patrolPoints[patrolIndex].position.x, patrolPoints[patrolIndex].position.y));
         if (distance <= stopThrottle) {
@@ -60,6 +63,7 @@ public class MoveIWanna : MonoBehaviour
         Vector3 targetDir = (patrolPoints[patrolIndex].position - transform.position).normalized;
         Vector3 targetPos = targetDir * patrolSpeed * 10f * Time.deltaTime + transform.position;
         SetDirection(targetPos);
+        Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
         if (animator) {
             animator.SetBool("IsWalking", true);
