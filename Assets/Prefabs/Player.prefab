@@ -111,6 +111,67 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1489203772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1489203773}
+  - component: {fileID: 1489203774}
+  - component: {fileID: 4072164022469867764}
+  m_Layer: 0
+  m_Name: Halo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1489203773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489203772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3786347654162806850}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1489203774
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489203772}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0040254593, y: 0.39}
+  serializedVersion: 2
+  m_Radius: 1.1
+--- !u!114 &4072164022469867764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489203772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2113ccaea7bfdcd47825c98648ebc2dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3786347652840976471
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.11999512, y: 0.9899998}
+  m_AnchoredPosition: {x: -0.083, y: 0.9899998}
   m_SizeDelta: {x: 1207.23, y: 594}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3786347652924986290
@@ -644,6 +705,7 @@ Transform:
   - {fileID: 3786347654389149159}
   - {fileID: 3786347652924986293}
   - {fileID: 458350179}
+  - {fileID: 1489203773}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -724,6 +786,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 100
   slice: {fileID: 3786347654135407214}
+  coolTime: 0.5
+  img: {fileID: 3786347653829202509}
+  curHp: 0
 --- !u!114 &3786347654162806849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +814,7 @@ MonoBehaviour:
   fireCoolTime: 0.5
   bulletPrefabs: {fileID: 2880694666343855264, guid: 72391997317282746914a88eb58954d4, type: 3}
   shootingPoint: {fileID: 3786347653402092484}
+  hpBar: {fileID: 3786347652924986294}
   nowTeleport: {fileID: 0}
 --- !u!1 &3786347654389149160
 GameObject:
