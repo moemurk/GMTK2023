@@ -28,6 +28,8 @@ public class Teleport : MonoBehaviour
     {
         Debug.Log("InitEnemies");
         foreach (EnemyMove e in enemies) {
+            e.gameObject.SetActive(true);
+            e.GetComponent<Unit>()?.InitState();
             e.InitState();
         }
     }

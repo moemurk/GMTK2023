@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float fireCoolTime;
     public GameObject bulletPrefabs;
     public Transform shootingPoint;
+    public GameObject hpBar;
     /****************/
     private bool canMove = true;
     private float horizontalMove = 0f;
@@ -176,6 +177,7 @@ public class PlayerController : MonoBehaviour
         facingRight = !facingRight;
         Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
+        hpBar.transform.localScale = new Vector3(-1f * hpBar.transform.localScale.x, hpBar.transform.localScale.y, hpBar.transform.localScale.z);;
 		transform.localScale = theScale;
     }
 

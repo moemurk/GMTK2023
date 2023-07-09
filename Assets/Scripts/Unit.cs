@@ -10,7 +10,7 @@ public class Unit : MonoBehaviour
     public float coolTime;
     public SpriteRenderer img;
     private float remainCoolTime;
-    private int curHp;
+    public int curHp;
 
     void Start()
     {

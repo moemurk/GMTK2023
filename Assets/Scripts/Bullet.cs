@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public Vector3 direction;
     public float speed;
+    public int damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,16 @@ public class Bullet : MonoBehaviour
         if (col.CompareTag("Player")) {
             return;
         }
-        Destroy(this.gameObject);
+        Unit u = col.GetComponent<Unit>();
+        if (u) {
+            Debug.Log("Bullet hit:" + col.name);
+            if (u.TakeDamage(damage)) {
+                if(!col.CompareTag("Player")) {
+                    Debug.Log("set in activate");
+                    col.gameObject.SetActive(false);
+                }
+            }
+            Destroy(this.gameObject);
+        }
     }
 }
