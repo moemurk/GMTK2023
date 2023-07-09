@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92d231cd44ebc69418b05ac7ecf9961d
+guid: 8e049c5ced5152d42b5cee66ef019116
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 96
+  spritePixelsToUnits: 144
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sparks-Sheet_0
+      name: enemy_winder_walking-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 96
+        width: 144
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd977b82effdbfe4e8e44eaaef97a9b3
-      internalID: -1442329863
+      spriteID: 2ede11abaf7a9e94e9c1f1090cfd9977
+      internalID: -1086693562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sparks-Sheet_1
+      name: enemy_winder_walking-Sheet_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 144
         y: 0
-        width: 96
-        height: 96
+        width: 144
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,41 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffb5331fbb7a9124fa9cb728e5beb84c
-      internalID: 1970308101
+      spriteID: 5ba89eeaf5f35dd4790522cba5be9f63
+      internalID: 1532660055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sparks-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21dbc93a99a011941932d47df2e35198
-      internalID: -832943071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sparks-Sheet_3
+      name: enemy_winder_walking-Sheet_2
       rect:
         serializedVersion: 2
         x: 288
         y: 0
-        width: 96
-        height: 96
+        width: 144
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c92ebff6c5476244bbc74bd24fa49b08
-      internalID: 1855294907
+      spriteID: 5ab1844011fc00049b9b00dfa5fc2ecb
+      internalID: 331469615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sparks-Sheet_4
+      name: enemy_winder_walking-Sheet_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 432
         y: 0
-        width: 96
-        height: 96
+        width: 144
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,50 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1792be106e03914d83bf7e23eabc70f
-      internalID: 1274001572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sparks-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d29c93fd5e40e3a4f99f41a8e564d546
-      internalID: 126186905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sparks-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c9b909404d27f547bbd6a00318d5d3f
-      internalID: 1612901208
+      spriteID: fe6535fc450e89949bcb55367e09e917
+      internalID: -810001427
       vertices: []
       indices: 
       edges: []
@@ -274,13 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sparks-Sheet_0: -1442329863
-      Sparks-Sheet_1: 1970308101
-      Sparks-Sheet_2: -832943071
-      Sparks-Sheet_3: 1855294907
-      Sparks-Sheet_4: 1274001572
-      Sparks-Sheet_5: 126186905
-      Sparks-Sheet_6: 1612901208
+      enemy_winder_walking-Sheet_0: -1086693562
+      enemy_winder_walking-Sheet_1: 1532660055
+      enemy_winder_walking-Sheet_2: 331469615
+      enemy_winder_walking-Sheet_3: -810001427
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
