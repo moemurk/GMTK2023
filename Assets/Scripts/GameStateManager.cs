@@ -15,9 +15,11 @@ public class GameStateManager : Singleton<GameStateManager>
     private float remainTimeInState;
     private List<GameObject> attachItems = new List<GameObject>();
 
+
     public void AddItem(GameObject item)
     {
         attachItems.Add(item);
+        player.GetComponent<PlayerController>().nowTeleport.OpenTheDoor();
     }
 
     void Start()
