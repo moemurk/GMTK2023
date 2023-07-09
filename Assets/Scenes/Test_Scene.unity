@@ -970,6 +970,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 281974695}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &27685060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1240,6 +1244,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 110522008}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &47521737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3113,6 +3121,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 110522008}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &214385792
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3319,6 +3331,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 110522008}
   targetCameraPos_Isaac: {fileID: 30763071}
+  needKey: 1
+  notOpen: {fileID: -668325558, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
+  open: {fileID: 354193582, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
+  endPoint: {fileID: 0}
 --- !u!1 &239808253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,6 +3649,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 0
   targetCameraPos: {fileID: 485617567}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &245543104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6427,6 +6447,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 0
   targetCameraPos: {fileID: 485617567}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &505244606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8302,6 +8326,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 281974695}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &623381553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9047,6 +9075,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 0
   targetCameraPos: {fileID: 485617567}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &680797002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10034,6 +10066,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 1523942072}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &775772843
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12225,6 +12261,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 0
   targetCameraPos: {fileID: 485617567}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!1 &1020189645
 GameObject:
   m_ObjectHideFlags: 0
@@ -12690,6 +12730,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 980003329}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &1083545939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12818,6 +12862,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 110522008}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &1084467400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13760,6 +13808,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 110522008}
   targetCameraPos_Isaac: {fileID: 30763071}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!60 &1238125399
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14097,6 +14149,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 980003329}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &1276618138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14836,6 +14892,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 980003329}
   targetCameraPos_Isaac: {fileID: 702503206}
+  needKey: 1
+  notOpen: {fileID: -668325558, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
+  open: {fileID: 354193582, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
+  endPoint: {fileID: 0}
 --- !u!1 &1315083817
 GameObject:
   m_ObjectHideFlags: 0
@@ -14967,6 +15027,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 281974695}
   targetCameraPos_Isaac: {fileID: 9566651}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 222950661}
 --- !u!1 &1343894655
 GameObject:
   m_ObjectHideFlags: 0
@@ -15428,6 +15492,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 1523942072}
   targetCameraPos_Isaac: {fileID: 1794825428}
+  needKey: 1
+  notOpen: {fileID: -668325558, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
+  open: {fileID: 354193582, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
+  endPoint: {fileID: 0}
 --- !u!1 &1366064227
 GameObject:
   m_ObjectHideFlags: 0
@@ -15754,6 +15822,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 281974695}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &1376722948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17248,6 +17320,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 281974695}
   targetCameraPos_Isaac: {fileID: 9566651}
+  needKey: 1
+  notOpen: {fileID: -668325558, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
+  open: {fileID: 354193582, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
+  endPoint: {fileID: 0}
 --- !u!1 &1494822056
 GameObject:
   m_ObjectHideFlags: 0
@@ -18860,6 +18936,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 1523942072}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &1595463174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20092,6 +20172,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 980003329}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &1705446594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20331,6 +20415,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 281974695}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &1707026725
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20570,6 +20658,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 980003329}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &1737025902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22279,6 +22371,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 1523942072}
   targetCameraPos_Isaac: {fileID: 1794825428}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 1492624523}
 --- !u!60 &1899776351
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23215,6 +23311,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 0
   targetCameraPos: {fileID: 485617567}
   targetCameraPos_Isaac: {fileID: 861408884}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 1314513957}
 --- !u!60 &1939762572
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23514,6 +23614,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 980003329}
   targetCameraPos_Isaac: {fileID: 702503206}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 1357900180}
 --- !u!60 &1957108418
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24186,6 +24290,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 110522008}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &2048474293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24743,6 +24851,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 1523942072}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &2070614866
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25826,6 +25938,10 @@ MonoBehaviour:
   canChangeStateNextLevel: 1
   targetCameraPos: {fileID: 1523942072}
   targetCameraPos_Isaac: {fileID: 0}
+  needKey: 0
+  notOpen: {fileID: 0}
+  open: {fileID: 0}
+  endPoint: {fileID: 0}
 --- !u!61 &2139219322
 BoxCollider2D:
   m_ObjectHideFlags: 0
