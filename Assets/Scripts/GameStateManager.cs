@@ -9,12 +9,17 @@ public class GameStateManager : Singleton<GameStateManager>
     public int changeDuration;
     public TextMeshProUGUI countDown;
     public GameObject player;
-    private bool isPlaying = true;
+    private bool isPlaying = false;
     private bool canChange = false;
     private StateName stateName = StateName.IWanna;
     private float remainTimeInState;
     private List<GameObject> attachItems = new List<GameObject>();
 
+
+    public void StartPlay()
+    {
+        isPlaying = true;
+    }
 
     public void AddItem(GameObject item)
     {
