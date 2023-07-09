@@ -7,7 +7,7 @@ public class MoveIsaac : MonoBehaviour
     public MovetypeISaac moveType;
     public float moveSpeed;
     public float movementSmoothing;
-    private bool activated = false;
+    public bool activated = false;
     private Vector3 velocity;
     [Header("Rush")] public float coolTime;
     public float rushingDistance;

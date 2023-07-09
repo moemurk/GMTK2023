@@ -9,12 +9,18 @@ public class Unit : MonoBehaviour
     public Slider slice;
     public float coolTime;
     public SpriteRenderer img;
+    public bool hideHpBarInIsaac;
     private float remainCoolTime;
-    public int curHp;
+    private int curHp;
+    private bool canBeAttack = true;
 
     void Start()
     {
         curHp = hp;
+        if (hideHpBarInIsaac) {
+            canBeAttack = false;
+            DisplayHpBar(false);
+        }
     }
 
     public void InitState()
@@ -35,6 +41,14 @@ public class Unit : MonoBehaviour
 
     void Update()
     {
+        if (hideHpBarInIsaac) {
+            if (GameStateManager.Instance.GetState() == StateName.IWanna) {
+                DisplayHpBar(false);
+            } else if (GetComponent<MoveIsaac>() && GetComponent<MoveIsaac>().activated) {
+                // if been activated
+                DisplayHpBar(true);
+            }
+        }
         if (remainCoolTime > 0f) {
             remainCoolTime -= Time.deltaTime;
             if (remainCoolTime <= 0f) {
@@ -52,6 +66,9 @@ public class Unit : MonoBehaviour
         if (remainCoolTime > 0f) {
             return false;
         }
+        if (!canBeAttack) {
+            return false;
+        }
         remainCoolTime = coolTime;
         //img.color = Color.red;
         img.color = new Color(1.0f, 0.0f, 0.0f, 0.6f);
@@ -63,6 +80,19 @@ public class Unit : MonoBehaviour
         } else {
             UpdateUI();
             return false;
+        }
+    }
+
+    public void DisplayHpBar(bool b)
+    {
+        if (!hideHpBarInIsaac) {
+            return;
+        }
+        canBeAttack = b;
+        if (b) {
+            slice.gameObject.SetActive(true);
+        } else {
+            slice.gameObject.SetActive(false);
         }
     }
 }
