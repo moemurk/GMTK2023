@@ -865,6 +865,7 @@ MonoBehaviour:
   triggerType_IWanna: 0
   triggerType_Isaac: 1
   damage: 5
+  key: {fileID: 0}
 --- !u!61 &475317377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1283,6 +1284,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 5
+  key: {fileID: 0}
 --- !u!1 &841699869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,6 +2662,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 5
+  key: {fileID: 0}
 --- !u!114 &1720501227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2861,6 +2864,7 @@ GameObject:
   - component: {fileID: 1983499084}
   - component: {fileID: 1983499090}
   - component: {fileID: 1983499091}
+  - component: {fileID: 1983499092}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -2883,6 +2887,7 @@ MonoBehaviour:
   triggerType_IWanna: 3
   triggerType_Isaac: 1
   damage: 5
+  key: {fileID: 21300000, guid: f0fa59d586f425a44b0cc3a463085b80, type: 3}
 --- !u!114 &1983499085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2974,7 +2979,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 32367773, guid: 41236deb179c14d478fc4f72df0319c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3030,6 +3035,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   movementSmoothing: 0.3
+--- !u!95 &1983499092
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983499083}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be62e86fc2ba8ea40bdb0876d5007565, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2033675676
 GameObject:
   m_ObjectHideFlags: 0
@@ -3114,6 +3140,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 5
+  key: {fileID: 0}
 --- !u!114 &2057961617
 MonoBehaviour:
   m_ObjectHideFlags: 0
