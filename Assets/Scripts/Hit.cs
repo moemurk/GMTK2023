@@ -7,6 +7,7 @@ public class Hit : MonoBehaviour
     public TriggerType triggerType_IWanna;
     public TriggerType triggerType_Isaac;
     public int damage;
+    [Header("Item")]public Sprite key;
 
     void OnTriggerStay2D(Collider2D col)
     {
@@ -58,7 +59,7 @@ public class Hit : MonoBehaviour
         follower.transform.position = GameStateManager.Instance.player.transform.position;
         Follow f = follower.AddComponent<Follow>();
         SpriteRenderer sr = follower.AddComponent<SpriteRenderer>();
-        sr.sprite = GetComponent<SpriteRenderer>().sprite;
+        sr.sprite = key;
         f.SetTarget(GameStateManager.Instance.player);
         GameStateManager.Instance.AddItem(follower);
     }
