@@ -54,7 +54,8 @@ public class MoveIWanna : MonoBehaviour
                 patrolIndex = 0;
             }
         }
-        Vector3 targetPos = patrolPoints[patrolIndex].position;
+        Vector3 targetDir = (patrolPoints[patrolIndex].position - transform.position).normalized;
+        Vector3 targetPos = targetDir * patrolSpeed * 10f * Time.deltaTime + transform.position;
         SetDirection(targetPos);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
         GetComponent<Animator>()?.SetBool("IsWalking", true);
