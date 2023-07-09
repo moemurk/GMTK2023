@@ -724,9 +724,10 @@ GameObject:
   - component: {fileID: 26530259}
   - component: {fileID: 26530258}
   - component: {fileID: 26530257}
+  - component: {fileID: 26530261}
   m_Layer: 0
   m_Name: Spike (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -891,6 +892,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 26530259}
   moveIsaac: {fileID: 26530258}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &26530261
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26530253}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &27685057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,8 +1105,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37367478}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.8826, y: 1.8559, z: 0}
-  m_LocalScale: {x: 5.497672, y: 7.483505, z: 1}
+  m_LocalPosition: {x: -9.8826, y: 2.1129, z: 0}
+  m_LocalScale: {x: 5.497672, y: 6.9689226, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
@@ -1193,7 +1222,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &47521736
 MonoBehaviour:
@@ -1755,7 +1784,7 @@ GameObject:
   - component: {fileID: 89567043}
   m_Layer: 0
   m_Name: Key
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1768,7 +1797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89567039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.76, y: -3.2, z: 0}
+  m_LocalPosition: {x: 7.54, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1840,7 +1869,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015690804, y: 0}
+  m_Offset: {x: 0.015691757, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1851,7 +1880,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5020809, y: 1.1966124}
+  m_Size: {x: 1.2485123, y: 1.1966124}
   m_EdgeRadius: 0
 --- !u!114 &89567043
 MonoBehaviour:
@@ -1867,7 +1896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerType_IWanna: 3
   triggerType_Isaac: 1
-  damage: 0
+  damage: 5
 --- !u!114 &89567044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1880,12 +1909,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveType: 2
-  moveSpeed: 7.5
+  moveType: 4
+  moveSpeed: 5
   movementSmoothing: 0.5
-  coolTime: 0
-  rushingDistance: 0
-  rushSpeed: 0
+  coolTime: 0.75
+  rushingDistance: 5
+  rushSpeed: 15
 --- !u!114 &89567045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2044,9 +2073,10 @@ GameObject:
   - component: {fileID: 101034746}
   - component: {fileID: 101034745}
   - component: {fileID: 101034744}
+  - component: {fileID: 101034748}
   m_Layer: 0
   m_Name: Spike (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2211,6 +2241,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 101034746}
   moveIsaac: {fileID: 101034745}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &101034748
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101034740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &110522007
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,9 +2315,10 @@ GameObject:
   - component: {fileID: 122983766}
   - component: {fileID: 122983765}
   - component: {fileID: 122983764}
+  - component: {fileID: 122983768}
   m_Layer: 0
   m_Name: Spike (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2424,6 +2483,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 122983766}
   moveIsaac: {fileID: 122983765}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &122983768
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122983760}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &130609501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2524,7 +2611,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &187994292
 SpriteRenderer:
@@ -2844,9 +2931,10 @@ GameObject:
   - component: {fileID: 204739432}
   - component: {fileID: 204739431}
   - component: {fileID: 204739430}
+  - component: {fileID: 204739434}
   m_Layer: 0
   m_Name: Spike_Attack
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2859,7 +2947,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204739426}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -8.32, y: -2.11, z: 0}
+  m_LocalPosition: {x: -8.3, y: -1.64, z: 0}
   m_LocalScale: {x: 0.5393, y: 0.5393, z: 0.5393}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2960,7 +3048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerType_IWanna: 2
   triggerType_Isaac: 1
-  damage: 0
+  damage: 10
 --- !u!114 &204739431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2974,7 +3062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveType: 1
-  moveSpeed: 10
+  moveSpeed: 20
   movementSmoothing: 0.5
   coolTime: 0
   rushingDistance: 0
@@ -3011,6 +3099,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 204739432}
   moveIsaac: {fileID: 204739431}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &204739434
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204739426}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &212459378
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,7 +3270,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &214385791
 MonoBehaviour:
@@ -3388,7 +3504,11 @@ GameObject:
   m_Component:
   - component: {fileID: 239808254}
   - component: {fileID: 239808255}
-  - component: {fileID: 239808256}
+  - component: {fileID: 239808261}
+  - component: {fileID: 239808260}
+  - component: {fileID: 239808259}
+  - component: {fileID: 239808258}
+  - component: {fileID: 239808257}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -3463,19 +3583,97 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &239808256
-BoxCollider:
+--- !u!114 &239808257
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239808253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 3
+  triggerType_Isaac: 1
+  damage: 0
+--- !u!114 &239808258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239808253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 2
+  moveSpeed: 7.5
+  movementSmoothing: 0.5
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &239808259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239808253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &239808260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239808253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 239808259}
+  moveIsaac: {fileID: 239808258}
+  ownLevel: {fileID: 1939762571}
+--- !u!61 &239808261
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239808253}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00946784, y: 0.00000008940697}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.8828125}
+    newSize: {x: 1, y: 0.8828125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4251437, y: 1.239501, z: 0.2}
-  m_Center: {x: 0.0045437813, y: 0.007753849, z: 0}
+  m_Size: {x: 1.2082953, y: 1.0721719}
+  m_EdgeRadius: 0
 --- !u!1 &242018194
 GameObject:
   m_ObjectHideFlags: 0
@@ -3501,7 +3699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242018194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.06, y: -1.764, z: 0}
+  m_LocalPosition: {x: 5.0290017, y: -1.764, z: 0}
   m_LocalScale: {x: 0.27084324, y: 0.98477453, z: 0.4611}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4312,7 +4510,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3547177408118373553, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.07
+      value: -4.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408566610790, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 3547177408728686006, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
       propertyPath: m_Name
@@ -4324,11 +4526,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.11
+      value: -2.66
       objectReference: {fileID: 0}
     - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.43
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4926,7 +5128,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &408928692
 SpriteRenderer:
@@ -5190,7 +5392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerType_IWanna: 3
   triggerType_Isaac: 1
-  damage: 0
+  damage: 5
 --- !u!114 &410385618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5203,12 +5405,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveType: 2
-  moveSpeed: 7.5
+  moveType: 4
+  moveSpeed: 5
   movementSmoothing: 0.5
-  coolTime: 0
-  rushingDistance: 0
-  rushSpeed: 0
+  coolTime: 0.75
+  rushingDistance: 5
+  rushSpeed: 15
 --- !u!114 &410385619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6474,9 +6676,10 @@ GameObject:
   - component: {fileID: 510373681}
   - component: {fileID: 510373680}
   - component: {fileID: 510373679}
+  - component: {fileID: 510373683}
   m_Layer: 6
   m_Name: M_Terrain
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6602,7 +6805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveType: 1
-  moveSpeed: 5
+  moveSpeed: 15
   movementSmoothing: 0.5
   coolTime: 0
   rushingDistance: 0
@@ -6639,6 +6842,32 @@ MonoBehaviour:
   moveIWanna: {fileID: 510373681}
   moveIsaac: {fileID: 510373680}
   ownLevel: {fileID: 1899776350}
+--- !u!61 &510373683
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510373675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &512101449
 GameObject:
   m_ObjectHideFlags: 0
@@ -6836,9 +7065,10 @@ GameObject:
   - component: {fileID: 515552184}
   - component: {fileID: 515552183}
   - component: {fileID: 515552182}
+  - component: {fileID: 515552186}
   m_Layer: 0
   m_Name: Spike (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7003,6 +7233,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 515552184}
   moveIsaac: {fileID: 515552183}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &515552186
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515552178}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &525522521
 GameObject:
   m_ObjectHideFlags: 0
@@ -7426,9 +7684,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerType_IWanna: 1
+  triggerType_IWanna: 2
   triggerType_Isaac: 3
-  damage: 0
+  damage: 1
 --- !u!114 &559820500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7494,9 +7752,10 @@ GameObject:
   - component: {fileID: 566169337}
   - component: {fileID: 566169336}
   - component: {fileID: 566169335}
+  - component: {fileID: 566169339}
   m_Layer: 0
   m_Name: Spike (14)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7661,6 +7920,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 566169337}
   moveIsaac: {fileID: 566169336}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &566169339
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566169331}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &568062366
 GameObject:
   m_ObjectHideFlags: 0
@@ -8235,9 +8522,10 @@ GameObject:
   - component: {fileID: 626545952}
   - component: {fileID: 626545951}
   - component: {fileID: 626545950}
+  - component: {fileID: 626545954}
   m_Layer: 0
   m_Name: Spike (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8402,6 +8690,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 626545952}
   moveIsaac: {fileID: 626545951}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &626545954
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626545946}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &630331734
 GameObject:
   m_ObjectHideFlags: 0
@@ -8417,9 +8733,10 @@ GameObject:
   - component: {fileID: 630331740}
   - component: {fileID: 630331739}
   - component: {fileID: 630331738}
+  - component: {fileID: 630331742}
   m_Layer: 0
   m_Name: Spike_Attack (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8432,7 +8749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630331734}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -7.749999, y: -2.11, z: 0}
+  m_LocalPosition: {x: -7.7299986, y: -1.6399999, z: 0}
   m_LocalScale: {x: 0.5393, y: 0.5393, z: 0.5393}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8533,7 +8850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerType_IWanna: 2
   triggerType_Isaac: 1
-  damage: 0
+  damage: 10
 --- !u!114 &630331739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8547,7 +8864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveType: 1
-  moveSpeed: 10
+  moveSpeed: 20
   movementSmoothing: 0.5
   coolTime: 0
   rushingDistance: 0
@@ -8584,6 +8901,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 630331740}
   moveIsaac: {fileID: 630331739}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &630331742
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630331734}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &668216430
 GameObject:
   m_ObjectHideFlags: 0
@@ -8953,9 +9298,10 @@ GameObject:
   - component: {fileID: 720211060}
   - component: {fileID: 720211059}
   - component: {fileID: 720211058}
+  - component: {fileID: 720211062}
   m_Layer: 0
   m_Name: Spike (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9120,6 +9466,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 720211060}
   moveIsaac: {fileID: 720211059}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &720211062
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720211054}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &725634857
 GameObject:
   m_ObjectHideFlags: 0
@@ -9219,9 +9593,10 @@ GameObject:
   - component: {fileID: 727088702}
   - component: {fileID: 727088701}
   - component: {fileID: 727088700}
+  - component: {fileID: 727088704}
   m_Layer: 0
   m_Name: Spike (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9386,6 +9761,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 727088702}
   moveIsaac: {fileID: 727088701}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &727088704
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727088696}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &735053062
 GameObject:
   m_ObjectHideFlags: 0
@@ -10493,7 +10896,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &875016892
 SpriteRenderer:
@@ -10781,9 +11184,10 @@ GameObject:
   - component: {fileID: 904952240}
   - component: {fileID: 904952239}
   - component: {fileID: 904952238}
+  - component: {fileID: 904952242}
   m_Layer: 6
   m_Name: M_Terrain_Attack
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10909,7 +11313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveType: 1
-  moveSpeed: 5
+  moveSpeed: 15
   movementSmoothing: 0.5
   coolTime: 0
   rushingDistance: 0
@@ -10946,6 +11350,32 @@ MonoBehaviour:
   moveIWanna: {fileID: 904952240}
   moveIsaac: {fileID: 904952239}
   ownLevel: {fileID: 1899776350}
+--- !u!61 &904952242
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904952234}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &906268148
 GameObject:
   m_ObjectHideFlags: 0
@@ -11183,9 +11613,10 @@ GameObject:
   - component: {fileID: 923571182}
   - component: {fileID: 923571181}
   - component: {fileID: 923571180}
+  - component: {fileID: 923571184}
   m_Layer: 0
   m_Name: Spike (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11350,6 +11781,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 923571182}
   moveIsaac: {fileID: 923571181}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &923571184
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923571176}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &926892466
 GameObject:
   m_ObjectHideFlags: 0
@@ -12164,6 +12623,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1489203774, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
+      propertyPath: m_Radius
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 3786347652924986293, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -12198,11 +12661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786347654162806850, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.5
+      value: 13.21
       objectReference: {fileID: 0}
     - target: {fileID: 3786347654162806850, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.53
+      value: -2.66
       objectReference: {fileID: 0}
     - target: {fileID: 3786347654162806850, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12239,6 +12702,10 @@ PrefabInstance:
     - target: {fileID: 3786347654162806853, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786347654162806974, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
+      propertyPath: hp
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
@@ -12402,7 +12869,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1084467399
 MonoBehaviour:
@@ -13105,6 +13572,7 @@ Transform:
   - {fileID: 1476245817}
   - {fileID: 454515977}
   - {fileID: 1932230476}
+  - {fileID: 1369045820}
   - {fileID: 408928691}
   - {fileID: 1838374409}
   - {fileID: 187994291}
@@ -13261,7 +13729,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1238125397
 SpriteRenderer:
@@ -13422,9 +13890,10 @@ GameObject:
   - component: {fileID: 1252808095}
   - component: {fileID: 1252808094}
   - component: {fileID: 1252808093}
+  - component: {fileID: 1252808097}
   m_Layer: 0
   m_Name: Spike (12)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13589,6 +14058,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 1252808095}
   moveIsaac: {fileID: 1252808094}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &1252808097
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252808089}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &1276618135
 GameObject:
   m_ObjectHideFlags: 0
@@ -14025,9 +14522,10 @@ GameObject:
   - component: {fileID: 1299902564}
   - component: {fileID: 1299902563}
   - component: {fileID: 1299902562}
+  - component: {fileID: 1299902566}
   m_Layer: 0
   m_Name: Spike (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14192,6 +14690,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 1299902564}
   moveIsaac: {fileID: 1299902563}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &1299902566
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299902558}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &1314513953
 GameObject:
   m_ObjectHideFlags: 0
@@ -15106,6 +15632,88 @@ Transform:
   m_Father: {fileID: 1239595955}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1369045819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1176328510}
+    m_Modifications:
+    - target: {fileID: 3547177408118373553, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408566610790, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686006, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_Name
+      value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7049999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177408728686012, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: ownLevel
+      value: 
+      objectReference: {fileID: 1238125398}
+    - target: {fileID: 3547177409764731950, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547177409764731950, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+--- !u!4 &1369045820 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
+  m_PrefabInstance: {fileID: 1369045819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1376722945
 GameObject:
   m_ObjectHideFlags: 0
@@ -15471,9 +16079,10 @@ GameObject:
   - component: {fileID: 1425907160}
   - component: {fileID: 1425907159}
   - component: {fileID: 1425907158}
+  - component: {fileID: 1425907162}
   m_Layer: 0
   m_Name: Spike (13)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15638,6 +16247,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 1425907160}
   moveIsaac: {fileID: 1425907159}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &1425907162
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425907154}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &1428925914
 GameObject:
   m_ObjectHideFlags: 0
@@ -15835,9 +16472,10 @@ GameObject:
   - component: {fileID: 1430615865}
   - component: {fileID: 1430615864}
   - component: {fileID: 1430615863}
+  - component: {fileID: 1430615867}
   m_Layer: 0
   m_Name: Spike (11)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16002,6 +16640,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 1430615865}
   moveIsaac: {fileID: 1430615864}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &1430615867
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430615859}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &1467620522
 GameObject:
   m_ObjectHideFlags: 0
@@ -16920,7 +17586,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531579571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0609994, y: -2.488, z: 0}
+  m_LocalPosition: {x: 5.03, y: -2.488, z: 0}
   m_LocalScale: {x: 0.22362842, y: 0.21494564, z: 0.4611}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18847,9 +19513,10 @@ GameObject:
   - component: {fileID: 1685021297}
   - component: {fileID: 1685021296}
   - component: {fileID: 1685021295}
+  - component: {fileID: 1685021299}
   m_Layer: 0
   m_Name: Spike
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19014,6 +19681,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 1685021297}
   moveIsaac: {fileID: 1685021296}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &1685021299
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685021291}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &1691046767
 GameObject:
   m_ObjectHideFlags: 0
@@ -20839,7 +21534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822889224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.11, y: 0.29999995, z: -10}
+  m_LocalPosition: {x: 21.3, y: 0.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20914,7 +21609,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1838374410
 SpriteRenderer:
@@ -22520,7 +23215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2025461787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22635,9 +23330,10 @@ GameObject:
   - component: {fileID: 2025869184}
   - component: {fileID: 2025869183}
   - component: {fileID: 2025869182}
+  - component: {fileID: 2025869186}
   m_Layer: 0
   m_Name: Spike (10)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22802,6 +23498,34 @@ MonoBehaviour:
   moveIWanna: {fileID: 2025869184}
   moveIsaac: {fileID: 2025869183}
   ownLevel: {fileID: 1899776350}
+--- !u!60 &2025869186
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025869178}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
 --- !u!1 &2036678633
 GameObject:
   m_ObjectHideFlags: 0
@@ -22921,7 +23645,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2038750436
 SpriteRenderer:
@@ -23098,7 +23822,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1176328510}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2048474292
 MonoBehaviour:
@@ -24877,7 +25601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.99
+      value: 7.4990005
       objectReference: {fileID: 0}
     - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
       propertyPath: m_LocalPosition.y
