@@ -46,12 +46,14 @@ public class GameStateManager : Singleton<GameStateManager>
             // change g
             player.GetComponent<PlayerController>().SwitchGravity(false);
             Camera.main.transform.position = player.GetComponent<PlayerController>().nowTeleport.targetCameraPos_Isaac.position;
+            Camera.main.transform.rotation = player.GetComponent<PlayerController>().nowTeleport.targetCameraPos_Isaac.rotation;
             Camera.main.orthographic = false;
         } else {
             stateName = StateName.IWanna;
             // change g
             player.GetComponent<PlayerController>().SwitchGravity(true);
             Camera.main.transform.position = player.GetComponent<PlayerController>().nowTeleport.targetCameraPos.position;
+            Camera.main.transform.rotation = player.GetComponent<PlayerController>().nowTeleport.targetCameraPos_Isaac.rotation;
             Camera.main.orthographic = true;
         }
         remainTimeInState = changeDuration;
