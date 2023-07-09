@@ -2262,6 +2262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1586222961}
   - component: {fileID: 1586222962}
+  - component: {fileID: 1586222963}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -2278,8 +2279,8 @@ Transform:
   m_GameObject: {fileID: 1586222960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.09, y: 2.09, z: 2.09}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1653980541}
   m_RootOrder: 0
@@ -2325,7 +2326,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db5ac57f18991e54eb65fa462a0ea7f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2336,6 +2337,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1586222963
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586222960}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e9f10af9a03e1742b0bddce2d75adf0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1599734869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,6 +2569,7 @@ MonoBehaviour:
   shootingPoint: {fileID: 893265659}
   hpBar: {fileID: 682497673}
   nowTeleport: {fileID: 971957633}
+  animator: {fileID: 1586222963}
 --- !u!61 &1653980543
 BoxCollider2D:
   m_ObjectHideFlags: 0

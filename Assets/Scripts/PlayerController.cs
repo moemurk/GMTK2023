@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     private bool canBeTeleport = true;
     private float coolTime = 0;
     private Vector3 facingDir = Vector3.right;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +67,9 @@ public class PlayerController : MonoBehaviour
     
     private void ControlByIWanna()
     {
+        if (animator) {
+            animator.SetInteger("facing", 0);
+        }
         Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
         // on ground detected
         bool wasOnGround = onGround;
@@ -146,12 +150,28 @@ public class PlayerController : MonoBehaviour
     {
         switch(turn) {
             case Turn.Left:
+                facingRight = false;
+                if (animator) {
+                    animator.SetInteger("facing", 0);
+                }
+                SetRight(false);
                 break;
             case Turn.Right:
+                facingRight = true;
+                if (animator) {
+                    animator.SetInteger("facing", 0);
+                }
+                SetRight(true);
                 break;
             case Turn.Up:
+                if (animator) {
+                    animator.SetInteger("facing", 2);
+                }
                 break;
             case Turn.Down:
+                if (animator) {
+                    animator.SetInteger("facing", 3);
+                }
                 break;
             default:
                 break;
@@ -199,6 +219,21 @@ public class PlayerController : MonoBehaviour
 		theScale.x *= -1;
         hpBar.transform.localScale = new Vector3(-1f * hpBar.transform.localScale.x, hpBar.transform.localScale.y, hpBar.transform.localScale.z);;
 		transform.localScale = theScale;
+    }
+
+    private void SetRight(bool r)
+    {
+        if (r) {
+            Vector3 theScale = transform.localScale;
+            theScale.x = Mathf.Abs(theScale.x);
+            hpBar.transform.localScale = new Vector3(Mathf.Abs(hpBar.transform.localScale.x), hpBar.transform.localScale.y, hpBar.transform.localScale.z);;
+            transform.localScale = theScale;
+        } else {
+            Vector3 theScale = transform.localScale;
+            theScale.x = -1f * Mathf.Abs(theScale.x);
+            hpBar.transform.localScale = new Vector3(-1f * Mathf.Abs(hpBar.transform.localScale.x), hpBar.transform.localScale.y, hpBar.transform.localScale.z);;
+            transform.localScale = theScale;
+        }
     }
 
     public void SwitchGravity(bool on) {
