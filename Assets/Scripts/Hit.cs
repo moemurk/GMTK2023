@@ -27,6 +27,9 @@ public class Hit : MonoBehaviour
             case TriggerType.Item:
                 TriggerItem(col);
                 break;
+            case TriggerType.Heal:
+                TriggerHeal(col);
+                break;
             case TriggerType.None:
             default:
                 break;
@@ -63,5 +66,14 @@ public class Hit : MonoBehaviour
         sr.sprite = key;
         f.SetTarget(GameStateManager.Instance.player);
         GameStateManager.Instance.AddItem(follower);
+    }
+
+    void TriggerHeal(Collider2D col)
+    {
+        gameObject.SetActive(false);
+        Unit u = col.GetComponent<Unit>();
+        if (u) {
+            u.InitState();
+        }
     }
 }

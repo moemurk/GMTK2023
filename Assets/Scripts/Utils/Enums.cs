@@ -24,6 +24,7 @@ public enum TriggerType {
     Damage,
     OneHit,
     Item,
+    Heal,
 }
 
 public enum Turn {
