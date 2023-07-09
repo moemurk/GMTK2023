@@ -721,7 +721,7 @@ GameObject:
   - component: {fileID: 27685061}
   - component: {fileID: 27685060}
   - component: {fileID: 27685059}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1024,6 +1024,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -1256,6 +1257,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -1383,7 +1385,7 @@ GameObject:
   - component: {fileID: 47521738}
   - component: {fileID: 47521737}
   - component: {fileID: 47521736}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1707,6 +1709,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -2254,6 +2257,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -2951,6 +2955,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -4074,6 +4079,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -4326,6 +4332,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -4629,6 +4636,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -4813,6 +4821,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 20
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -4999,7 +5008,7 @@ GameObject:
   - component: {fileID: 214385793}
   - component: {fileID: 214385792}
   - component: {fileID: 214385791}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5587,6 +5596,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -5840,6 +5850,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -6076,6 +6087,7 @@ MonoBehaviour:
   moveType: 2
   moveSpeed: 7.5
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -6254,7 +6266,7 @@ GameObject:
   - component: {fileID: 245543105}
   - component: {fileID: 245543104}
   - component: {fileID: 245543103}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7107,6 +7119,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -8824,6 +8837,7 @@ MonoBehaviour:
   moveType: 3
   moveSpeed: 10
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -8975,6 +8989,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -9829,6 +9844,7 @@ MonoBehaviour:
   moveType: 2
   moveSpeed: 20
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -10320,6 +10336,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -10582,6 +10599,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -11125,6 +11143,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -11372,6 +11391,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -11610,7 +11630,7 @@ GameObject:
   - component: {fileID: 505244607}
   - component: {fileID: 505244606}
   - component: {fileID: 505244605}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11875,6 +11895,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -12032,6 +12053,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -12761,6 +12783,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -13175,6 +13198,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -14578,7 +14602,7 @@ GameObject:
   - component: {fileID: 623381554}
   - component: {fileID: 623381553}
   - component: {fileID: 623381552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14845,6 +14869,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 20
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -15115,6 +15140,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -15900,7 +15926,7 @@ GameObject:
   - component: {fileID: 680797003}
   - component: {fileID: 680797002}
   - component: {fileID: 680797001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16225,6 +16251,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -17028,6 +17055,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -17297,6 +17325,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -17977,7 +18006,7 @@ GameObject:
   - component: {fileID: 775772844}
   - component: {fileID: 775772843}
   - component: {fileID: 775772842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18214,6 +18243,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -18559,6 +18589,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -19015,6 +19046,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -20276,6 +20308,7 @@ MonoBehaviour:
   moveType: 4
   moveSpeed: 5
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0.75
   rushingDistance: 5
   rushSpeed: 15
@@ -20480,6 +20513,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -20845,6 +20879,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -21275,6 +21310,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -21373,7 +21409,7 @@ MonoBehaviour:
   slice: {fileID: 938959519}
   coolTime: 0.5
   img: {fileID: 904952236}
-  curHp: 0
+  hideHpBarInIsaac: 0
 --- !u!1 &906268148
 GameObject:
   m_ObjectHideFlags: 0
@@ -23063,7 +23099,7 @@ GameObject:
   - component: {fileID: 993716415}
   - component: {fileID: 993716414}
   - component: {fileID: 993716416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23441,6 +23477,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -24140,6 +24177,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -24730,7 +24768,7 @@ GameObject:
   - component: {fileID: 1083545940}
   - component: {fileID: 1083545939}
   - component: {fileID: 1083545938}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24860,7 +24898,7 @@ GameObject:
   - component: {fileID: 1084467401}
   - component: {fileID: 1084467400}
   - component: {fileID: 1084467399}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25208,6 +25246,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -25640,6 +25679,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -26582,6 +26622,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -26858,6 +26899,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -27682,6 +27724,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -28403,6 +28446,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -28711,7 +28755,7 @@ GameObject:
   - component: {fileID: 1276618139}
   - component: {fileID: 1276618138}
   - component: {fileID: 1276618137}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29641,6 +29685,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -30407,6 +30452,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -30981,7 +31027,7 @@ GameObject:
   - component: {fileID: 1376722949}
   - component: {fileID: 1376722948}
   - component: {fileID: 1376722947}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31549,6 +31595,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -32172,6 +32219,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -32486,6 +32534,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -33647,6 +33696,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -33911,6 +33961,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -34093,6 +34144,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -35057,6 +35109,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -36352,6 +36405,7 @@ MonoBehaviour:
   moveType: 2
   moveSpeed: 20
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -36796,6 +36850,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -37226,6 +37281,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -37435,6 +37491,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -37914,7 +37971,7 @@ GameObject:
   - component: {fileID: 1595463175}
   - component: {fileID: 1595463174}
   - component: {fileID: 1595463173}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38262,6 +38319,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -38827,6 +38885,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -39868,6 +39927,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -40079,6 +40139,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -40724,6 +40785,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -40851,7 +40913,7 @@ GameObject:
   - component: {fileID: 1705446595}
   - component: {fileID: 1705446594}
   - component: {fileID: 1705446593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41092,7 +41154,7 @@ GameObject:
   - component: {fileID: 1707026726}
   - component: {fileID: 1707026725}
   - component: {fileID: 1707026724}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv4 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41700,7 +41762,7 @@ GameObject:
   - component: {fileID: 1737025903}
   - component: {fileID: 1737025902}
   - component: {fileID: 1737025901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42603,6 +42665,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -43059,6 +43122,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -44099,6 +44163,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -44449,6 +44514,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -44812,6 +44878,7 @@ MonoBehaviour:
   moveType: 3
   moveSpeed: 10
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -45017,6 +45084,7 @@ MonoBehaviour:
   moveType: 2
   moveSpeed: 20
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -46531,6 +46599,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -46794,6 +46863,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -48635,6 +48705,7 @@ MonoBehaviour:
   moveType: 4
   moveSpeed: 5
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0.75
   rushingDistance: 5
   rushSpeed: 15
@@ -48921,6 +48992,7 @@ MonoBehaviour:
   moveType: 0
   moveSpeed: 0
   movementSmoothing: 0
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -49048,7 +49120,7 @@ GameObject:
   - component: {fileID: 2048474294}
   - component: {fileID: 2048474293}
   - component: {fileID: 2048474292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49481,6 +49553,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -49554,7 +49627,7 @@ GameObject:
   - component: {fileID: 2070614867}
   - component: {fileID: 2070614866}
   - component: {fileID: 2070614865}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50545,6 +50618,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -51050,6 +51124,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -51262,6 +51337,7 @@ MonoBehaviour:
   moveType: 1
   moveSpeed: 15
   movementSmoothing: 0.5
+  activated: 0
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
@@ -51537,7 +51613,7 @@ GameObject:
   - component: {fileID: 2139219323}
   - component: {fileID: 2139219322}
   - component: {fileID: 2139219321}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeadZone_Lv3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
