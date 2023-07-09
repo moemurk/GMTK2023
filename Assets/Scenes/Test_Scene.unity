@@ -745,7 +745,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &26530255
 SpriteRenderer:
@@ -842,6 +842,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &26530258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2404,7 +2405,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &101034742
 SpriteRenderer:
@@ -2501,6 +2502,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &101034745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2757,7 +2759,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &122983762
 SpriteRenderer:
@@ -2854,6 +2856,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &122983765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2966,6 +2969,7 @@ Transform:
   - {fileID: 1570608422}
   - {fileID: 1290070165}
   - {fileID: 510373676}
+  - {fileID: 575672605}
   - {fileID: 904952235}
   - {fileID: 1425907155}
   - {fileID: 566169332}
@@ -3456,6 +3460,7 @@ GameObject:
   - component: {fileID: 187994296}
   - component: {fileID: 187994295}
   - component: {fileID: 187994294}
+  - component: {fileID: 187994298}
   m_Layer: 0
   m_Name: Red Apple
   m_TagString: Enemy
@@ -3519,8 +3524,8 @@ SpriteRenderer:
   m_SortingLayerID: -1933389547
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.6603774, g: 0.21493416, b: 0.27131718, a: 1}
+  m_Sprite: {fileID: 953790668, guid: 8e39eac69b4f7a1468b21d5084cb397e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3561,6 +3566,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 3
   damage: 50
+  key: {fileID: 0}
 --- !u!114 &187994295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3611,6 +3617,27 @@ MonoBehaviour:
   moveIWanna: {fileID: 187994296}
   moveIsaac: {fileID: 187994295}
   ownLevel: {fileID: 1238125398}
+--- !u!95 &187994298
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187994290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ff28df18c30ee444fa97bbdf689866f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &194518354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,6 +3869,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 3
   damage: 50
+  key: {fileID: 0}
 --- !u!114 &202432552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3928,7 +3956,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!60 &204739428
 PolygonCollider2D:
@@ -4025,6 +4053,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &204739431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4822,6 +4851,7 @@ MonoBehaviour:
   triggerType_IWanna: 3
   triggerType_Isaac: 1
   damage: 0
+  key: {fileID: 0}
 --- !u!114 &239808258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5718,6 +5748,7 @@ MonoBehaviour:
   triggerType_IWanna: 0
   triggerType_Isaac: 0
   damage: 0
+  key: {fileID: 0}
 --- !u!114 &288608385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6038,6 +6069,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &312860895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7433,6 +7465,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &374023724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7859,6 +7892,7 @@ GameObject:
   - component: {fileID: 408928696}
   - component: {fileID: 408928695}
   - component: {fileID: 408928694}
+  - component: {fileID: 408928698}
   m_Layer: 0
   m_Name: Poison Apple
   m_TagString: Enemy
@@ -7922,8 +7956,8 @@ SpriteRenderer:
   m_SortingLayerID: -1933389547
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.29923713, g: 0.65882355, b: 0.21568625, a: 1}
+  m_Sprite: {fileID: -1279222279, guid: 91a73c56d884a2443b796798e5751380, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7964,6 +7998,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &408928695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8014,6 +8049,27 @@ MonoBehaviour:
   moveIWanna: {fileID: 408928696}
   moveIsaac: {fileID: 408928695}
   ownLevel: {fileID: 1238125398}
+--- !u!95 &408928698
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408928690}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea427166dfa3000498b056280c0303d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &422081570
 GameObject:
   m_ObjectHideFlags: 0
@@ -8739,6 +8795,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &449342937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9283,6 +9340,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &454515981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9825,6 +9883,7 @@ MonoBehaviour:
   triggerType_IWanna: 0
   triggerType_Isaac: 0
   damage: 0
+  key: {fileID: 0}
 --- !u!114 &465693956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10034,6 +10093,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &470958270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10436,6 +10496,7 @@ GameObject:
   - component: {fileID: 510373680}
   - component: {fileID: 510373679}
   - component: {fileID: 510373683}
+  - component: {fileID: 510373684}
   m_Layer: 6
   m_Name: M_Terrain
   m_TagString: Enemy
@@ -10451,9 +10512,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510373675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.1591, y: -4.102, z: 0}
-  m_LocalScale: {x: 1.1845008, y: 0.61422366, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -6.4500003, y: -4.08, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.75}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 130609502}
   m_RootOrder: 5
@@ -10499,7 +10560,7 @@ SpriteRenderer:
   m_SortingLayerID: -1933389547
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -668325558, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10551,6 +10612,7 @@ MonoBehaviour:
   triggerType_IWanna: 0
   triggerType_Isaac: 0
   damage: 0
+  key: {fileID: 0}
 --- !u!114 &510373680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10627,6 +10689,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &510373684
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510373675}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29d808903fe3cac40b3b84bb48e73f9e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &512101449
 GameObject:
   m_ObjectHideFlags: 0
@@ -10760,6 +10843,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &512101454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10874,7 +10958,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &515552180
 SpriteRenderer:
@@ -10971,6 +11055,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &515552183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11611,6 +11696,7 @@ GameObject:
   - component: {fileID: 559820501}
   - component: {fileID: 559820500}
   - component: {fileID: 559820499}
+  - component: {fileID: 559820503}
   m_Layer: 0
   m_Name: Red Apple
   m_TagString: Enemy
@@ -11631,7 +11717,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &559820497
 SpriteRenderer:
@@ -11674,8 +11760,8 @@ SpriteRenderer:
   m_SortingLayerID: -1933389547
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.6603774, g: 0.21493416, b: 0.27131718, a: 1}
+  m_Sprite: {fileID: 953790668, guid: 8e39eac69b4f7a1468b21d5084cb397e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11716,6 +11802,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 3
   damage: 50
+  key: {fileID: 0}
 --- !u!114 &559820500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11766,6 +11853,27 @@ MonoBehaviour:
   moveIWanna: {fileID: 559820501}
   moveIsaac: {fileID: 559820500}
   ownLevel: {fileID: 1899776350}
+--- !u!95 &559820503
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559820495}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ff28df18c30ee444fa97bbdf689866f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &559853537
 GameObject:
   m_ObjectHideFlags: 0
@@ -12024,7 +12132,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &566169333
 SpriteRenderer:
@@ -12121,6 +12229,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &566169336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12240,6 +12349,236 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &575672604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575672605}
+  - component: {fileID: 575672613}
+  - component: {fileID: 575672612}
+  - component: {fileID: 575672611}
+  - component: {fileID: 575672610}
+  - component: {fileID: 575672609}
+  - component: {fileID: 575672608}
+  - component: {fileID: 575672607}
+  - component: {fileID: 575672606}
+  m_Layer: 6
+  m_Name: M_Terrain (1)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &575672605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575672604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.83, y: -4.08, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.75}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 130609502}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &575672606
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575672604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29d808903fe3cac40b3b84bb48e73f9e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &575672607
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575672604}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &575672608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575672604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 0
+  triggerType_Isaac: 0
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &575672609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575672604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 1
+  moveSpeed: 15
+  movementSmoothing: 0.5
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &575672610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575672604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &575672611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575672604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 575672610}
+  moveIsaac: {fileID: 575672609}
+  ownLevel: {fileID: 1899776350}
+--- !u!61 &575672612
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575672604}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &575672613
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575672604}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1933389547
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -668325558, guid: 51349dd9ea598f5418c8b98f6883f4ff, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &579405377
 GameObject:
   m_ObjectHideFlags: 0
@@ -13684,7 +14023,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &626545948
 SpriteRenderer:
@@ -13781,6 +14120,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &626545951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13895,7 +14235,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!60 &630331736
 PolygonCollider2D:
@@ -13992,6 +14332,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &630331739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15311,7 +15652,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &720211056
 SpriteRenderer:
@@ -15408,6 +15749,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &720211059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15717,7 +16059,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &727088698
 SpriteRenderer:
@@ -15814,6 +16156,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &727088701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16136,6 +16479,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &747047835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16912,7 +17256,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &775772842
 MonoBehaviour:
@@ -18472,6 +18816,7 @@ MonoBehaviour:
   triggerType_IWanna: 3
   triggerType_Isaac: 1
   damage: 5
+  key: {fileID: 0}
 --- !u!114 &859779040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18707,7 +19052,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3547177408728686007, guid: f9f0061151347ba4cb0d4e73f1f07051, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18850,7 +19195,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &904952236
 SpriteRenderer:
@@ -18945,6 +19290,7 @@ MonoBehaviour:
   triggerType_IWanna: 0
   triggerType_Isaac: 1
   damage: 5
+  key: {fileID: 0}
 --- !u!114 &904952239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19481,7 +19827,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &923571178
 SpriteRenderer:
@@ -19578,6 +19924,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &923571181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21193,6 +21540,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1020189650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21548,6 +21896,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.18903525
       objectReference: {fileID: 0}
+    - target: {fileID: 3786347653829202509, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786347653829202509, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1933389547
+      objectReference: {fileID: 0}
     - target: {fileID: 3786347654135407213, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.05
@@ -21566,11 +21922,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786347654162806850, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.69
+      value: 12.83
       objectReference: {fileID: 0}
     - target: {fileID: 3786347654162806850, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.55
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 3786347654162806850, guid: 67e2b37ea700ca749ab50475d9f17a7f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22784,6 +23140,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1120966370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24206,7 +24563,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1204843296
 PolygonCollider2D:
@@ -24251,6 +24608,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1204843298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25078,7 +25436,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1252808091
 SpriteRenderer:
@@ -25175,6 +25533,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1252808094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25810,6 +26169,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1279852650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26110,7 +26470,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1299902560
 SpriteRenderer:
@@ -26207,6 +26567,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1299902563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28422,7 +28783,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1425907156
 SpriteRenderer:
@@ -28519,6 +28880,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1425907159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28730,6 +29092,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1428925919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28844,7 +29207,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1430615861
 SpriteRenderer:
@@ -28941,6 +29304,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1430615864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30190,6 +30554,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1476245821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30301,7 +30666,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1492624521
 SpriteRenderer:
@@ -31101,6 +31466,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1524850310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32395,6 +32761,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1558738483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32981,6 +33348,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1580294092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33535,7 +33903,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1595463173
 MonoBehaviour:
@@ -34913,6 +35281,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1682066947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35122,6 +35491,7 @@ MonoBehaviour:
   triggerType_IWanna: 0
   triggerType_Isaac: 1
   damage: 5
+  key: {fileID: 0}
 --- !u!114 &1684592460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35234,7 +35604,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1685021293
 SpriteRenderer:
@@ -35331,6 +35701,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1685021296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38606,7 +38977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822889224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.11, y: 0.29999995, z: -10}
+  m_LocalPosition: {x: 20.2, y: 0.29999995, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38772,6 +39143,7 @@ GameObject:
   - component: {fileID: 1838374414}
   - component: {fileID: 1838374413}
   - component: {fileID: 1838374412}
+  - component: {fileID: 1838374416}
   m_Layer: 0
   m_Name: Poison Apple (1)
   m_TagString: Enemy
@@ -38835,8 +39207,8 @@ SpriteRenderer:
   m_SortingLayerID: -1933389547
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.29923713, g: 0.65882355, b: 0.21568625, a: 1}
+  m_Sprite: {fileID: -1279222279, guid: 91a73c56d884a2443b796798e5751380, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38877,6 +39249,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1838374413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38927,6 +39300,27 @@ MonoBehaviour:
   moveIWanna: {fileID: 1838374414}
   moveIsaac: {fileID: 1838374413}
   ownLevel: {fileID: 1238125398}
+--- !u!95 &1838374416
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838374408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea427166dfa3000498b056280c0303d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1840663404
 GameObject:
   m_ObjectHideFlags: 0
@@ -39060,6 +39454,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1840663409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39883,7 +40278,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1899776349
 SpriteRenderer:
@@ -39993,7 +40388,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7078691976017289611, guid: f5bb5b3703876ba44b80c1d768ac9af3, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 7078691976017289611, guid: f5bb5b3703876ba44b80c1d768ac9af3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40272,90 +40667,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1911252723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1911252725}
-  - component: {fileID: 1911252724}
-  m_Layer: 0
-  m_Name: enemy_winder_idle-Sheet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1911252724
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911252723}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 25
-  m_Sprite: {fileID: 21300000, guid: f65836dbb89aa4c4e92f8e68f31b91ce, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.88, y: 1.44}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1911252725
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911252723}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.77, y: -2.19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1923081711
 GameObject:
   m_ObjectHideFlags: 0
@@ -40711,6 +41022,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &1932230480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42043,7 +42355,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2025869180
 SpriteRenderer:
@@ -42140,6 +42452,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &2025869183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42654,6 +42967,7 @@ MonoBehaviour:
   triggerType_IWanna: 3
   triggerType_Isaac: 1
   damage: 5
+  key: {fileID: 0}
 --- !u!114 &2038750439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43244,6 +43558,7 @@ MonoBehaviour:
   triggerType_IWanna: 0
   triggerType_Isaac: 0
   damage: 0
+  key: {fileID: 0}
 --- !u!114 &2066650343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43352,7 +43667,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2070614865
 MonoBehaviour:
@@ -44582,6 +44897,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &2124871231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44793,6 +45109,7 @@ MonoBehaviour:
   triggerType_IWanna: 2
   triggerType_Isaac: 1
   damage: 10
+  key: {fileID: 0}
 --- !u!114 &2130092888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45103,7 +45420,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130609502}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2139219321
 MonoBehaviour:
