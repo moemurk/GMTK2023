@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c74f4be2c54fe8042bd7649a0d9c1eb7
+guid: a17197e10290ea74488bbbe6972645b7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: green_circle_wSparks-Sheet_0
+      name: green_circle_wSparks-Sheet 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 896a4d79809861747bc21d6bfb868935
-      internalID: -1402215772
+      spriteID: 12b8a483ff12b784cb0405903aba2a8e
+      internalID: -234678851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: green_circle_wSparks-Sheet_1
+      name: green_circle_wSparks-Sheet 1_1
       rect:
         serializedVersion: 2
         x: 96
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a36810be43beea24dbbb46269f02c701
-      internalID: -1786930834
+      spriteID: 94a3c57a77e8abf40a85727d8952144a
+      internalID: -2079823062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: green_circle_wSparks-Sheet_2
+      name: green_circle_wSparks-Sheet 1_2
       rect:
         serializedVersion: 2
         x: 192
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbd0239377c7bbf43be44fa62cea379b
-      internalID: 854115747
+      spriteID: 5009b54f42c4ea74a8732fb1df2a19ba
+      internalID: 1325062354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: green_circle_wSparks-Sheet_3
+      name: green_circle_wSparks-Sheet 1_3
       rect:
         serializedVersion: 2
         x: 288
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0a6e47da700cf04881034dcce440c4a
-      internalID: 301142111
+      spriteID: 1b917c1cfc6330f4ebd15c2c7d8f0f49
+      internalID: 506625011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: green_circle_wSparks-Sheet_4
+      name: green_circle_wSparks-Sheet 1_4
       rect:
         serializedVersion: 2
         x: 384
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68941584cca70aa4cbe04dad10e6e90a
-      internalID: 1970590319
+      spriteID: e98c00cfe8031414d92ac7fc494e4114
+      internalID: -2111439131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: green_circle_wSparks-Sheet_5
+      name: green_circle_wSparks-Sheet 1_5
       rect:
         serializedVersion: 2
         x: 480
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 847e5a30b08d99f45a41e1a27e62a28e
-      internalID: -1481545955
+      spriteID: 9e836f47b77e1514bab2096cc4902634
+      internalID: 573605653
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      green_circle_wSparks-Sheet_0: -1402215772
-      green_circle_wSparks-Sheet_1: -1786930834
-      green_circle_wSparks-Sheet_2: 854115747
-      green_circle_wSparks-Sheet_3: 301142111
-      green_circle_wSparks-Sheet_4: 1970590319
-      green_circle_wSparks-Sheet_5: -1481545955
+      green_circle_wSparks-Sheet 1_0: -234678851
+      green_circle_wSparks-Sheet 1_1: -2079823062
+      green_circle_wSparks-Sheet 1_2: 1325062354
+      green_circle_wSparks-Sheet 1_3: 506625011
+      green_circle_wSparks-Sheet 1_4: -2111439131
+      green_circle_wSparks-Sheet 1_5: 573605653
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
