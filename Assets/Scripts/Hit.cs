@@ -59,6 +59,7 @@ public class Hit : MonoBehaviour
         follower.transform.position = GameStateManager.Instance.player.transform.position;
         Follow f = follower.AddComponent<Follow>();
         SpriteRenderer sr = follower.AddComponent<SpriteRenderer>();
+        sr.renderingLayerMask = 3;
         sr.sprite = key;
         f.SetTarget(GameStateManager.Instance.player);
         GameStateManager.Instance.AddItem(follower);
