@@ -51,5 +51,15 @@ public class Hit : MonoBehaviour
     void TriggerItem(Collider2D col)
     {
         Debug.Log("Item");
+        gameObject.SetActive(false);
+        GameObject follower = new GameObject("following item");
+        follower.transform.SetParent(null);
+        follower.transform.localScale = transform.localScale;
+        follower.transform.position = GameStateManager.Instance.player.transform.position;
+        Follow f = follower.AddComponent<Follow>();
+        SpriteRenderer sr = follower.AddComponent<SpriteRenderer>();
+        sr.sprite = GetComponent<SpriteRenderer>().sprite;
+        f.SetTarget(GameStateManager.Instance.player);
+        GameStateManager.Instance.AddItem(follower);
     }
 }

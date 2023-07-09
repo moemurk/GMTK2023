@@ -13,6 +13,12 @@ public class GameStateManager : Singleton<GameStateManager>
     private bool canChange = false;
     private StateName stateName = StateName.IWanna;
     private float remainTimeInState;
+    private List<GameObject> attachItems = new List<GameObject>();
+
+    public void AddItem(GameObject item)
+    {
+        attachItems.Add(item);
+    }
 
     void Start()
     {
@@ -29,6 +35,9 @@ public class GameStateManager : Singleton<GameStateManager>
         Camera.main.transform.position = player.GetComponent<PlayerController>().nowTeleport.targetCameraPos.position;
         Camera.main.transform.rotation = player.GetComponent<PlayerController>().nowTeleport.targetCameraPos.rotation;
         Camera.main.orthographic = true;
+        foreach (GameObject i in attachItems) {
+            Destroy(i);
+        }
     }
 
     void Update()

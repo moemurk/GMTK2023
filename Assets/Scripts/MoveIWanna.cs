@@ -12,12 +12,14 @@ public class MoveIWanna : MonoBehaviour
     public float movementSmoothing;
     public float stopThrottle;
     private int patrolIndex;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < patrolPoints.Length; i++) {
             patrolPoints[i].transform.SetParent(null);
         }
+        animator = GetComponent<Animator>();
     }
 
     public void InitState()
@@ -35,7 +37,9 @@ public class MoveIWanna : MonoBehaviour
                 break;
             case MovetypeIWanna.None:
             default:
-                GetComponent<Animator>()?.SetBool("IsWalking", false);
+                if (animator) {
+                    animator.SetBool("IsWalking", false);
+                }
                 break;
         }
     }
@@ -58,7 +62,9 @@ public class MoveIWanna : MonoBehaviour
         Vector3 targetPos = targetDir * patrolSpeed * 10f * Time.deltaTime + transform.position;
         SetDirection(targetPos);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
-        GetComponent<Animator>()?.SetBool("IsWalking", true);
+        if (animator) {
+            animator.SetBool("IsWalking", true);
+        }
     }
 
     private void SetDirection(Vector3 targetPos)

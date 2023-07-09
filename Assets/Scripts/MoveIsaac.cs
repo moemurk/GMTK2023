@@ -16,11 +16,13 @@ public class MoveIsaac : MonoBehaviour
     private bool isRushing;
     private Vector3 rushDirection;
     private Vector3 rushStartPoint;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         remainCoolTime = coolTime;
         isRushing = false;
+        animator = GetComponent<Animator>();
     }
 
     public void InitState()
@@ -54,7 +56,9 @@ public class MoveIsaac : MonoBehaviour
                 break;
             case MovetypeISaac.None:
             default:
-                GetComponent<Animator>()?.SetBool("IsWalking", false);
+                if (animator) {
+                    animator.SetBool("IsWalking", false);
+                }
                 break;
         }
     }
@@ -70,7 +74,9 @@ public class MoveIsaac : MonoBehaviour
                 Debug.Log("End Rush");
                 isRushing = false;
                 remainCoolTime = coolTime;
-                GetComponent<Animator>()?.SetBool("IsWalking", false);
+                if (animator) {
+                    animator.SetBool("IsWalking", false);
+                }
             }
         } else {
             // only cal time when rushing is over
@@ -81,7 +87,9 @@ public class MoveIsaac : MonoBehaviour
                 isRushing = true;
                 rushDirection = (GameStateManager.Instance.player.transform.position - transform.position).normalized;
                 rushStartPoint = transform.position;
-                GetComponent<Animator>()?.SetBool("IsWalking", true);
+                if (animator) {
+                    animator.SetBool("IsWalking", true);
+                }
             }
         }
     }
@@ -93,7 +101,9 @@ public class MoveIsaac : MonoBehaviour
         Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
         SetDirection(targetPos);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
-        GetComponent<Animator>()?.SetBool("IsWalking", true);
+        if (animator) {
+            animator.SetBool("IsWalking", true);
+        }
     }
 
     private void MoveVertical()
@@ -105,7 +115,9 @@ public class MoveIsaac : MonoBehaviour
         Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
         SetDirection(targetPos);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
-        GetComponent<Animator>()?.SetBool("IsWalking", true);
+        if (animator) {
+            animator.SetBool("IsWalking", true);
+        }
     }
 
     private void MoveHorizontal()
@@ -117,7 +129,9 @@ public class MoveIsaac : MonoBehaviour
         Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
         SetDirection(targetPos);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, movementSmoothing, Mathf.Infinity);
-        GetComponent<Animator>()?.SetBool("IsWalking", true);
+        if (animator) {
+            animator.SetBool("IsWalking", true);
+        }
     }
 
     public void SetEnemyActivated(bool a)

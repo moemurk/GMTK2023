@@ -8,11 +8,13 @@ public class EnemyMove : MonoBehaviour
     public MoveIsaac moveIsaac;
     public Teleport ownLevel;
     private Vector3 originPos;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         originPos = transform.position;
         ownLevel.RegisterEnemy(this);
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,15 +26,21 @@ public class EnemyMove : MonoBehaviour
         StateName gameState = GameStateManager.Instance.GetState();
         switch(gameState) {
             case StateName.IWanna:
-                GetComponent<Animator>()?.SetBool("IsWalking", false);
+                if (animator) {
+                    animator.SetBool("IsWalking", false);
+                }
                 moveIWanna?.Move();
                 break;
             case StateName.Isaac:
-                GetComponent<Animator>()?.SetBool("IsWalking", false);
+                if (animator) {
+                    animator.SetBool("IsWalking", false);
+                }
                 moveIsaac?.Move();
                 break;
             default:
-                GetComponent<Animator>()?.SetBool("IsWalking", false);
+                if (animator) {
+                    animator.SetBool("IsWalking", false);
+                }
                 break;
         }
     }
