@@ -22,7 +22,6 @@ public class Teleport : MonoBehaviour
                 animator.SetTrigger("InitState");
             }
         } else {
-            Debug.Log("needKey");
             if (animator) {
                 animator.SetTrigger("Open");
                 Debug.Log("set Open");

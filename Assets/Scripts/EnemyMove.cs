@@ -51,7 +51,6 @@ public class EnemyMove : MonoBehaviour
 
     public void InitState()
     {
-        Debug.Log("InitState");
         transform.position = originPos;
         moveIWanna?.InitState();
         moveIsaac?.InitState();
@@ -62,13 +61,11 @@ public class EnemyMove : MonoBehaviour
 
     public void StopMove()
     {
-        Debug.Log("StopMoving");
         canMove = false;
     }
 
     public void StartMove()
     {
-        Debug.Log("StartMoving");
         canMove = true;
     }
     
