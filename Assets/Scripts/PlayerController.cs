@@ -112,10 +112,12 @@ public class PlayerController : MonoBehaviour
             if (onGround) {
                 onGround = false;
                 animator.SetBool("IsJumping", true);
+                rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0f);
                 rigidbody2D.AddForce(new Vector2(0f, jumpForce));
             } else if (!alreadyDoubleJump && canDoubleJump) {
                 alreadyDoubleJump = true;
                 animator.SetBool("IsJumping", true);
+                rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0f);
                 rigidbody2D.AddForce(new Vector2(0f, jumpForce));
             }
         }
