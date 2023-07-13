@@ -6,13 +6,13 @@ using TMPro;
 
 public class GameStateManager : Singleton<GameStateManager>
 {
-    public int changeDuration;
+    public float changeDuration;
     public TextMeshProUGUI countDown;
     public GameObject player;
     private bool isPlaying = false;
-    private bool canChange = false;
-    private StateName stateName = StateName.IWanna;
-    private float remainTimeInState;
+    public bool canChange = false;
+    public StateName stateName = StateName.IWanna;
+    public float remainTimeInState;
     private List<GameObject> attachItems = new List<GameObject>();
 
 
