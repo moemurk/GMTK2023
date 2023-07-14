@@ -237,8 +237,7 @@ public class PlayerController : MonoBehaviour
         facingRight = !facingRight;
         Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
-        hpBar.transform.localScale = new Vector3(-1f * hpBar.transform.localScale.x, hpBar.transform.localScale.y, hpBar.transform.localScale.z);;
-        haloImage.transform.localScale = new Vector3(-1f * haloImage.transform.localScale.x, haloImage.transform.localScale.y, haloImage.transform.localScale.z);;
+        hpBar.transform.localScale = new Vector3(-1f * hpBar.transform.localScale.x, hpBar.transform.localScale.y, hpBar.transform.localScale.z);
 		transform.localScale = theScale;
     }
 
