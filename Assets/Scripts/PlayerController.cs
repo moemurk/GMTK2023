@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     public GameObject hpBar;
     public GameObject haloImage;
     /****************/
-    private bool canMove = true;
+    private bool canMove = false;
     private float horizontalMove = 0f;
     private float verticalMove = 0f;
     private bool jumpInput = false;

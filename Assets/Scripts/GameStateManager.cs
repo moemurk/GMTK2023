@@ -19,6 +19,7 @@ public class GameStateManager : Singleton<GameStateManager>
     public void StartPlay()
     {
         isPlaying = true;
+        player.GetComponent<PlayerController>().SetMoveState(true);
     }
 
     public void AddItem(GameObject item)
