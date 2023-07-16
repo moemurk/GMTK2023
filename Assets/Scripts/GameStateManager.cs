@@ -16,6 +16,7 @@ public class GameStateManager : Singleton<GameStateManager>
     public float remainTimeInState;
     private List<GameObject> attachItems = new List<GameObject>();
     private int deathNum = 0;
+    private bool playerAlive = true;
 
 
     public void StartPlay()
@@ -53,6 +54,9 @@ public class GameStateManager : Singleton<GameStateManager>
     void Update()
     {
         if (isPlaying) {
+            if (!playerAlive) {
+                AfterDead();
+            }
             if (canChange) {
                 remainTimeInState -= Time.deltaTime;
                 countDown.SetText(decimal.Round(decimal.Parse(remainTimeInState.ToString()), 1).ToString());
@@ -101,9 +105,15 @@ public class GameStateManager : Singleton<GameStateManager>
     public void Dead()
     {
         Debug.Log("Dead");
+        playerAlive = false;
+    }
+
+    public void AfterDead()
+    {
         deathNum++;
         deathUI.text = "Death:" + deathNum.ToString();
         Spawn();
+        playerAlive = true;
     }
 
     public void Spawn()
