@@ -934,7 +934,10 @@ GameObject:
   - component: {fileID: 27685058}
   - component: {fileID: 27685061}
   - component: {fileID: 27685060}
-  - component: {fileID: 27685059}
+  - component: {fileID: 27685065}
+  - component: {fileID: 27685064}
+  - component: {fileID: 27685063}
+  - component: {fileID: 27685062}
   m_Layer: 6
   m_Name: DeadZone_Lv4 (2)
   m_TagString: Untagged
@@ -957,24 +960,6 @@ Transform:
   m_Father: {fileID: 1948863546}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &27685059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27685057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1315083821}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 281974695}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &27685060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1053,6 +1038,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &27685062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27685057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &27685063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27685057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &27685064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27685057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &27685065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27685057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 27685064}
+  moveIsaac: {fileID: 27685063}
+  ownLevel: {fileID: 1315083821}
 --- !u!1 &30763070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,7 +1585,10 @@ GameObject:
   - component: {fileID: 47521735}
   - component: {fileID: 47521738}
   - component: {fileID: 47521737}
-  - component: {fileID: 47521736}
+  - component: {fileID: 47521742}
+  - component: {fileID: 47521741}
+  - component: {fileID: 47521740}
+  - component: {fileID: 47521739}
   m_Layer: 6
   m_Name: DeadZone_Lv5
   m_TagString: Untagged
@@ -1556,24 +1611,6 @@ Transform:
   m_Father: {fileID: 1176328510}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &47521736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47521734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1238125398}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 110522008}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &47521737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1652,6 +1689,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &47521739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47521734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &47521740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47521734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &47521741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47521734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &47521742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47521734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 47521741}
+  moveIsaac: {fileID: 47521740}
+  ownLevel: {fileID: 1238125398}
 --- !u!1 &51060631
 GameObject:
   m_ObjectHideFlags: 0
@@ -6844,6 +6948,7 @@ GameObject:
   - component: {fileID: 202432553}
   - component: {fileID: 202432552}
   - component: {fileID: 202432551}
+  - component: {fileID: 202432555}
   m_Layer: 0
   m_Name: Red Apple
   m_TagString: Enemy
@@ -7001,6 +7106,27 @@ MonoBehaviour:
   moveIWanna: {fileID: 202432553}
   moveIsaac: {fileID: 202432552}
   ownLevel: {fileID: 1315083821}
+--- !u!95 &202432555
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202432547}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ff28df18c30ee444fa97bbdf689866f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &204739426
 GameObject:
   m_ObjectHideFlags: 0
@@ -7336,7 +7462,10 @@ GameObject:
   - component: {fileID: 214385790}
   - component: {fileID: 214385793}
   - component: {fileID: 214385792}
-  - component: {fileID: 214385791}
+  - component: {fileID: 214385797}
+  - component: {fileID: 214385796}
+  - component: {fileID: 214385795}
+  - component: {fileID: 214385794}
   m_Layer: 6
   m_Name: DeadZone_Lv5 (3)
   m_TagString: Untagged
@@ -7359,24 +7488,6 @@ Transform:
   m_Father: {fileID: 1176328510}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &214385791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214385789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1238125398}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 110522008}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &214385792
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7455,6 +7566,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &214385794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214385789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &214385795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214385789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &214385796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214385789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &214385797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214385789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 214385796}
+  moveIsaac: {fileID: 214385795}
+  ownLevel: {fileID: 1238125398}
 --- !u!1 &214943094
 GameObject:
   m_ObjectHideFlags: 0
@@ -8633,7 +8811,10 @@ GameObject:
   - component: {fileID: 245543102}
   - component: {fileID: 245543105}
   - component: {fileID: 245543104}
-  - component: {fileID: 245543103}
+  - component: {fileID: 245543109}
+  - component: {fileID: 245543108}
+  - component: {fileID: 245543107}
+  - component: {fileID: 245543106}
   m_Layer: 6
   m_Name: DeadZone_Lv1 (2)
   m_TagString: Untagged
@@ -8656,24 +8837,6 @@ Transform:
   m_Father: {fileID: 1239595955}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &245543103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245543101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1939762571}
-  canChangeStateNextLevel: 0
-  targetCameraPos: {fileID: 485617567}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &245543104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8752,6 +8915,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &245543106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245543101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &245543107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245543101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &245543108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245543101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &245543109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245543101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 245543108}
+  moveIsaac: {fileID: 245543107}
+  ownLevel: {fileID: 1939762571}
 --- !u!1 &245774694
 GameObject:
   m_ObjectHideFlags: 0
@@ -13984,7 +14214,10 @@ GameObject:
   - component: {fileID: 404569740}
   - component: {fileID: 404569743}
   - component: {fileID: 404569742}
-  - component: {fileID: 404569741}
+  - component: {fileID: 404569747}
+  - component: {fileID: 404569746}
+  - component: {fileID: 404569745}
+  - component: {fileID: 404569744}
   m_Layer: 6
   m_Name: DeadZone_Lv6 (3)
   m_TagString: Untagged
@@ -14007,24 +14240,6 @@ Transform:
   m_Father: {fileID: 2140898458}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &404569741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 404569739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 135141686}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 2058303378}
-  targetCameraPos_Isaac: {fileID: 1220241778}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &404569742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14103,6 +14318,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &404569744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404569739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &404569745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404569739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &404569746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404569739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &404569747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404569739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 404569746}
+  moveIsaac: {fileID: 404569745}
+  ownLevel: {fileID: 135141686}
 --- !u!1 &405555527
 GameObject:
   m_ObjectHideFlags: 0
@@ -19271,7 +19553,10 @@ GameObject:
   - component: {fileID: 505244604}
   - component: {fileID: 505244607}
   - component: {fileID: 505244606}
-  - component: {fileID: 505244605}
+  - component: {fileID: 505244611}
+  - component: {fileID: 505244610}
+  - component: {fileID: 505244609}
+  - component: {fileID: 505244608}
   m_Layer: 6
   m_Name: DeadZone_Lv1 (1)
   m_TagString: Untagged
@@ -19294,24 +19579,6 @@ Transform:
   m_Father: {fileID: 1239595955}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &505244605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505244603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1939762571}
-  canChangeStateNextLevel: 0
-  targetCameraPos: {fileID: 485617567}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &505244606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19390,6 +19657,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &505244608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505244603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &505244609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505244603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &505244610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505244603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &505244611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505244603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 505244610}
+  moveIsaac: {fileID: 505244609}
+  ownLevel: {fileID: 1939762571}
 --- !u!1 &510373675
 GameObject:
   m_ObjectHideFlags: 0
@@ -22979,7 +23313,10 @@ GameObject:
   - component: {fileID: 623381551}
   - component: {fileID: 623381554}
   - component: {fileID: 623381553}
-  - component: {fileID: 623381552}
+  - component: {fileID: 623381558}
+  - component: {fileID: 623381557}
+  - component: {fileID: 623381556}
+  - component: {fileID: 623381555}
   m_Layer: 6
   m_Name: DeadZone_Lv4 (1)
   m_TagString: Untagged
@@ -23002,24 +23339,6 @@ Transform:
   m_Father: {fileID: 1948863546}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &623381552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 623381550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1315083821}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 281974695}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &623381553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23098,6 +23417,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &623381555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623381550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &623381556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623381550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &623381557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623381550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &623381558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623381550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 623381557}
+  moveIsaac: {fileID: 623381556}
+  ownLevel: {fileID: 1315083821}
 --- !u!1 &626671760
 GameObject:
   m_ObjectHideFlags: 0
@@ -25298,7 +25684,10 @@ GameObject:
   - component: {fileID: 680797000}
   - component: {fileID: 680797003}
   - component: {fileID: 680797002}
-  - component: {fileID: 680797001}
+  - component: {fileID: 680797007}
+  - component: {fileID: 680797006}
+  - component: {fileID: 680797005}
+  - component: {fileID: 680797004}
   m_Layer: 6
   m_Name: DeadZone_Lv1 (3)
   m_TagString: Untagged
@@ -25321,24 +25710,6 @@ Transform:
   m_Father: {fileID: 1239595955}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &680797001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680796999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1939762571}
-  canChangeStateNextLevel: 0
-  targetCameraPos: {fileID: 485617567}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &680797002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25417,6 +25788,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &680797004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680796999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &680797005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680796999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &680797006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680796999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &680797007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680796999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 680797006}
+  moveIsaac: {fileID: 680797005}
+  ownLevel: {fileID: 1939762571}
 --- !u!1 &685627548
 GameObject:
   m_ObjectHideFlags: 0
@@ -26088,7 +26526,10 @@ GameObject:
   - component: {fileID: 713895704}
   - component: {fileID: 713895707}
   - component: {fileID: 713895706}
-  - component: {fileID: 713895705}
+  - component: {fileID: 713895711}
+  - component: {fileID: 713895710}
+  - component: {fileID: 713895709}
+  - component: {fileID: 713895708}
   m_Layer: 6
   m_Name: DeadZone_Lv6
   m_TagString: Untagged
@@ -26111,24 +26552,6 @@ Transform:
   m_Father: {fileID: 2140898458}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &713895705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713895703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 135141686}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 2058303378}
-  targetCameraPos_Isaac: {fileID: 1220241778}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &713895706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26207,6 +26630,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &713895708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713895703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &713895709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713895703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &713895710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713895703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &713895711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713895703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 713895710}
+  moveIsaac: {fileID: 713895709}
+  ownLevel: {fileID: 135141686}
 --- !u!1 &714326383
 GameObject:
   m_ObjectHideFlags: 0
@@ -28404,7 +28894,10 @@ GameObject:
   - component: {fileID: 775772841}
   - component: {fileID: 775772844}
   - component: {fileID: 775772843}
-  - component: {fileID: 775772842}
+  - component: {fileID: 775772848}
+  - component: {fileID: 775772847}
+  - component: {fileID: 775772846}
+  - component: {fileID: 775772845}
   m_Layer: 6
   m_Name: DeadZone_Lv3 (3)
   m_TagString: Untagged
@@ -28427,24 +28920,6 @@ Transform:
   m_Father: {fileID: 130609502}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &775772842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 775772840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1899776350}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 1523942072}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &775772843
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28523,6 +28998,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &775772845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775772840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &775772846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775772840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &775772847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775772840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &775772848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775772840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 775772847}
+  moveIsaac: {fileID: 775772846}
+  ownLevel: {fileID: 1899776350}
 --- !u!1 &783564629
 GameObject:
   m_ObjectHideFlags: 0
@@ -34757,6 +35299,9 @@ GameObject:
   - component: {fileID: 993716413}
   - component: {fileID: 993716415}
   - component: {fileID: 993716414}
+  - component: {fileID: 993716419}
+  - component: {fileID: 993716418}
+  - component: {fileID: 993716417}
   - component: {fileID: 993716416}
   m_Layer: 6
   m_Name: DeadZone_Lv1
@@ -34867,15 +35412,64 @@ MonoBehaviour:
   m_GameObject: {fileID: 993716412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1939762571}
-  canChangeStateNextLevel: 0
-  targetCameraPos: {fileID: 485617567}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &993716417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993716412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &993716418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993716412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &993716419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993716412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 993716418}
+  moveIsaac: {fileID: 993716417}
+  ownLevel: {fileID: 1939762571}
 --- !u!1 &999674532
 GameObject:
   m_ObjectHideFlags: 0
@@ -37888,7 +38482,10 @@ GameObject:
   - component: {fileID: 1083545937}
   - component: {fileID: 1083545940}
   - component: {fileID: 1083545939}
-  - component: {fileID: 1083545938}
+  - component: {fileID: 1083545944}
+  - component: {fileID: 1083545943}
+  - component: {fileID: 1083545942}
+  - component: {fileID: 1083545941}
   m_Layer: 6
   m_Name: DeadZone_Lv2 (2)
   m_TagString: Untagged
@@ -37911,24 +38508,6 @@ Transform:
   m_Father: {fileID: 1148785772}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1083545938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083545936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1957108417}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 980003329}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &1083545939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38007,6 +38586,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1083545941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083545936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &1083545942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083545936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &1083545943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083545936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &1083545944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083545936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 1083545943}
+  moveIsaac: {fileID: 1083545942}
+  ownLevel: {fileID: 1957108417}
 --- !u!1 &1084467397
 GameObject:
   m_ObjectHideFlags: 0
@@ -38018,7 +38664,10 @@ GameObject:
   - component: {fileID: 1084467398}
   - component: {fileID: 1084467401}
   - component: {fileID: 1084467400}
-  - component: {fileID: 1084467399}
+  - component: {fileID: 1084467405}
+  - component: {fileID: 1084467404}
+  - component: {fileID: 1084467403}
+  - component: {fileID: 1084467402}
   m_Layer: 6
   m_Name: DeadZone_Lv5 (1)
   m_TagString: Untagged
@@ -38041,24 +38690,6 @@ Transform:
   m_Father: {fileID: 1176328510}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1084467399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084467397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1238125398}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 110522008}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &1084467400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38137,6 +38768,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1084467402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084467397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &1084467403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084467397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &1084467404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084467397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &1084467405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084467397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 1084467404}
+  moveIsaac: {fileID: 1084467403}
+  ownLevel: {fileID: 1238125398}
 --- !u!1 &1088869486
 GameObject:
   m_ObjectHideFlags: 0
@@ -44907,7 +45605,10 @@ GameObject:
   - component: {fileID: 1276618136}
   - component: {fileID: 1276618139}
   - component: {fileID: 1276618138}
-  - component: {fileID: 1276618137}
+  - component: {fileID: 1276618143}
+  - component: {fileID: 1276618142}
+  - component: {fileID: 1276618141}
+  - component: {fileID: 1276618140}
   m_Layer: 6
   m_Name: DeadZone_Lv2 (3)
   m_TagString: Untagged
@@ -44930,24 +45631,6 @@ Transform:
   m_Father: {fileID: 1148785772}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1276618137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276618135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1957108417}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 980003329}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &1276618138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45026,6 +45709,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1276618140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276618135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &1276618141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276618135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &1276618142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276618135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &1276618143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276618135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 1276618142}
+  moveIsaac: {fileID: 1276618141}
+  ownLevel: {fileID: 1957108417}
 --- !u!1 &1277793399
 GameObject:
   m_ObjectHideFlags: 0
@@ -47407,7 +48157,10 @@ GameObject:
   - component: {fileID: 1376722946}
   - component: {fileID: 1376722949}
   - component: {fileID: 1376722948}
-  - component: {fileID: 1376722947}
+  - component: {fileID: 1376722953}
+  - component: {fileID: 1376722952}
+  - component: {fileID: 1376722951}
+  - component: {fileID: 1376722950}
   m_Layer: 6
   m_Name: DeadZone_Lv4
   m_TagString: Untagged
@@ -47430,24 +48183,6 @@ Transform:
   m_Father: {fileID: 1948863546}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1376722947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376722945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1315083821}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 281974695}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &1376722948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47526,6 +48261,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1376722950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376722945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &1376722951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376722945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &1376722952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376722945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &1376722953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376722945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 1376722952}
+  moveIsaac: {fileID: 1376722951}
+  ownLevel: {fileID: 1315083821}
 --- !u!1 &1379558317
 GameObject:
   m_ObjectHideFlags: 0
@@ -52627,7 +53429,10 @@ GameObject:
   - component: {fileID: 1536535433}
   - component: {fileID: 1536535436}
   - component: {fileID: 1536535435}
-  - component: {fileID: 1536535434}
+  - component: {fileID: 1536535440}
+  - component: {fileID: 1536535439}
+  - component: {fileID: 1536535438}
+  - component: {fileID: 1536535437}
   m_Layer: 6
   m_Name: DeadZone_Lv6 (1)
   m_TagString: Untagged
@@ -52650,24 +53455,6 @@ Transform:
   m_Father: {fileID: 2140898458}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1536535434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536535432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 135141686}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 2058303378}
-  targetCameraPos_Isaac: {fileID: 1220241778}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &1536535435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52746,6 +53533,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1536535437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536535432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &1536535438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536535432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &1536535439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536535432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &1536535440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536535432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 1536535439}
+  moveIsaac: {fileID: 1536535438}
+  ownLevel: {fileID: 135141686}
 --- !u!1 &1538967941
 GameObject:
   m_ObjectHideFlags: 0
@@ -55377,7 +56231,10 @@ GameObject:
   - component: {fileID: 1595463172}
   - component: {fileID: 1595463175}
   - component: {fileID: 1595463174}
-  - component: {fileID: 1595463173}
+  - component: {fileID: 1595463179}
+  - component: {fileID: 1595463178}
+  - component: {fileID: 1595463177}
+  - component: {fileID: 1595463176}
   m_Layer: 6
   m_Name: DeadZone_Lv3 (2)
   m_TagString: Untagged
@@ -55400,24 +56257,6 @@ Transform:
   m_Father: {fileID: 130609502}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1595463173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595463171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1899776350}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 1523942072}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &1595463174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55496,6 +56335,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1595463176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595463171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &1595463177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595463171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &1595463178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595463171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &1595463179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595463171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 1595463178}
+  moveIsaac: {fileID: 1595463177}
+  ownLevel: {fileID: 1899776350}
 --- !u!1 &1597221160
 GameObject:
   m_ObjectHideFlags: 0
@@ -58650,7 +59556,10 @@ GameObject:
   - component: {fileID: 1705446592}
   - component: {fileID: 1705446595}
   - component: {fileID: 1705446594}
-  - component: {fileID: 1705446593}
+  - component: {fileID: 1705446599}
+  - component: {fileID: 1705446598}
+  - component: {fileID: 1705446597}
+  - component: {fileID: 1705446596}
   m_Layer: 6
   m_Name: DeadZone_Lv2 (1)
   m_TagString: Untagged
@@ -58673,24 +59582,6 @@ Transform:
   m_Father: {fileID: 1148785772}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1705446593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705446591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1957108417}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 980003329}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &1705446594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58769,6 +59660,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1705446596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705446591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &1705446597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705446591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &1705446598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705446591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &1705446599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705446591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 1705446598}
+  moveIsaac: {fileID: 1705446597}
+  ownLevel: {fileID: 1957108417}
 --- !u!1 &1705499276
 GameObject:
   m_ObjectHideFlags: 0
@@ -58891,7 +59849,10 @@ GameObject:
   - component: {fileID: 1707026723}
   - component: {fileID: 1707026726}
   - component: {fileID: 1707026725}
-  - component: {fileID: 1707026724}
+  - component: {fileID: 1707026730}
+  - component: {fileID: 1707026729}
+  - component: {fileID: 1707026728}
+  - component: {fileID: 1707026727}
   m_Layer: 6
   m_Name: DeadZone_Lv4 (3)
   m_TagString: Untagged
@@ -58914,24 +59875,6 @@ Transform:
   m_Father: {fileID: 1948863546}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1707026724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707026722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1315083821}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 281974695}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &1707026725
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59010,6 +59953,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1707026727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707026722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &1707026728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707026722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &1707026729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707026722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &1707026730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707026722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 1707026729}
+  moveIsaac: {fileID: 1707026728}
+  ownLevel: {fileID: 1315083821}
 --- !u!1 &1708044558
 GameObject:
   m_ObjectHideFlags: 0
@@ -59732,7 +60742,10 @@ GameObject:
   - component: {fileID: 1737025900}
   - component: {fileID: 1737025903}
   - component: {fileID: 1737025902}
-  - component: {fileID: 1737025901}
+  - component: {fileID: 1737025907}
+  - component: {fileID: 1737025906}
+  - component: {fileID: 1737025905}
+  - component: {fileID: 1737025904}
   m_Layer: 6
   m_Name: DeadZone_Lv2
   m_TagString: Untagged
@@ -59755,24 +60768,6 @@ Transform:
   m_Father: {fileID: 1148785772}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1737025901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737025899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1957108417}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 980003329}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &1737025902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59851,6 +60846,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1737025904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737025899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &1737025905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737025899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &1737025906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737025899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &1737025907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737025899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 1737025906}
+  moveIsaac: {fileID: 1737025905}
+  ownLevel: {fileID: 1957108417}
 --- !u!1 &1738940383
 GameObject:
   m_ObjectHideFlags: 0
@@ -68880,7 +69942,10 @@ GameObject:
   - component: {fileID: 2013878109}
   - component: {fileID: 2013878112}
   - component: {fileID: 2013878111}
-  - component: {fileID: 2013878110}
+  - component: {fileID: 2013878116}
+  - component: {fileID: 2013878115}
+  - component: {fileID: 2013878114}
+  - component: {fileID: 2013878113}
   m_Layer: 6
   m_Name: DeadZone_Lv6 (2)
   m_TagString: Untagged
@@ -68903,24 +69968,6 @@ Transform:
   m_Father: {fileID: 2140898458}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2013878110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013878108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 135141686}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 2058303378}
-  targetCameraPos_Isaac: {fileID: 1220241778}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &2013878111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68999,6 +70046,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2013878113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013878108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &2013878114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013878108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &2013878115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013878108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &2013878116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013878108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 2013878115}
+  moveIsaac: {fileID: 2013878114}
+  ownLevel: {fileID: 135141686}
 --- !u!1 &2025461786
 GameObject:
   m_ObjectHideFlags: 0
@@ -70363,7 +71477,10 @@ GameObject:
   - component: {fileID: 2048474291}
   - component: {fileID: 2048474294}
   - component: {fileID: 2048474293}
-  - component: {fileID: 2048474292}
+  - component: {fileID: 2048474298}
+  - component: {fileID: 2048474297}
+  - component: {fileID: 2048474296}
+  - component: {fileID: 2048474295}
   m_Layer: 6
   m_Name: DeadZone_Lv5 (2)
   m_TagString: Untagged
@@ -70386,24 +71503,6 @@ Transform:
   m_Father: {fileID: 1176328510}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2048474292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048474290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1238125398}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 110522008}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &2048474293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70482,6 +71581,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2048474295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048474290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &2048474296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048474290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &2048474297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048474290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &2048474298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048474290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 2048474297}
+  moveIsaac: {fileID: 2048474296}
+  ownLevel: {fileID: 1238125398}
 --- !u!1 &2052765954
 GameObject:
   m_ObjectHideFlags: 0
@@ -71058,7 +72224,10 @@ GameObject:
   - component: {fileID: 2070614864}
   - component: {fileID: 2070614867}
   - component: {fileID: 2070614866}
-  - component: {fileID: 2070614865}
+  - component: {fileID: 2070614871}
+  - component: {fileID: 2070614870}
+  - component: {fileID: 2070614869}
+  - component: {fileID: 2070614868}
   m_Layer: 6
   m_Name: DeadZone_Lv3
   m_TagString: Untagged
@@ -71081,24 +72250,6 @@ Transform:
   m_Father: {fileID: 130609502}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2070614865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070614863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1899776350}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 1523942072}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &2070614866
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71177,6 +72328,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2070614868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070614863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &2070614869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070614863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &2070614870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070614863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &2070614871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070614863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 2070614870}
+  moveIsaac: {fileID: 2070614869}
+  ownLevel: {fileID: 1899776350}
 --- !u!1 &2074033088
 GameObject:
   m_ObjectHideFlags: 0
@@ -73844,7 +75062,10 @@ GameObject:
   - component: {fileID: 2139219320}
   - component: {fileID: 2139219323}
   - component: {fileID: 2139219322}
-  - component: {fileID: 2139219321}
+  - component: {fileID: 2139219327}
+  - component: {fileID: 2139219326}
+  - component: {fileID: 2139219325}
+  - component: {fileID: 2139219324}
   m_Layer: 6
   m_Name: DeadZone_Lv3 (1)
   m_TagString: Untagged
@@ -73867,24 +75088,6 @@ Transform:
   m_Father: {fileID: 130609502}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2139219321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139219319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ce5e56e792eb448aaee9a4a2f52ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1899776350}
-  canChangeStateNextLevel: 1
-  targetCameraPos: {fileID: 1523942072}
-  targetCameraPos_Isaac: {fileID: 0}
-  needKey: 0
-  endPoint: {fileID: 0}
 --- !u!61 &2139219322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73963,6 +75166,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2139219324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139219319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c518fcc42d68d4a47a579d7f6bc125d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType_IWanna: 2
+  triggerType_Isaac: 2
+  damage: 0
+  key: {fileID: 0}
+--- !u!114 &2139219325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139219319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0b73fac0091f5428999102a70fa3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  moveSpeed: 0
+  movementSmoothing: 0
+  activated: 0
+  coolTime: 0
+  rushingDistance: 0
+  rushSpeed: 0
+--- !u!114 &2139219326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139219319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5401d6a228d967e49a1c9d4bd6d58b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  patrolPoints: []
+  patrolSpeed: 0
+  movementSmoothing: 0
+  stopThrottle: 0
+--- !u!114 &2139219327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139219319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e937411271f57f4e8e0d2b6c62813d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveIWanna: {fileID: 2139219326}
+  moveIsaac: {fileID: 2139219325}
+  ownLevel: {fileID: 1899776350}
 --- !u!1 &2140898457
 GameObject:
   m_ObjectHideFlags: 0
