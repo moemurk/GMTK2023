@@ -8,12 +8,14 @@ public class GameStateManager : Singleton<GameStateManager>
 {
     public float changeDuration;
     public TextMeshProUGUI countDown;
+    public TextMeshProUGUI deathUI;
     public GameObject player;
     private bool isPlaying = false;
     public bool canChange = false;
     public StateName stateName = StateName.IWanna;
     public float remainTimeInState;
     private List<GameObject> attachItems = new List<GameObject>();
+    private int deathNum = 0;
 
 
     public void StartPlay()
@@ -99,6 +101,8 @@ public class GameStateManager : Singleton<GameStateManager>
     public void Dead()
     {
         Debug.Log("Dead");
+        deathNum++;
+        deathUI.text = "Death:" + deathNum.ToString();
         Spawn();
     }
 
