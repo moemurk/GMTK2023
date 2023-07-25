@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveIWanna : MonoBehaviour
 {
     public MovetypeIWanna moveType;
+    public GameObject hpBar;
     private Vector3 velocity;
     /* Patrol mode*/
     [Header("Patrol")] public Transform[] patrolPoints;
@@ -75,9 +76,11 @@ public class MoveIWanna : MonoBehaviour
         if ((targetPos - transform.position).x >= 0) {
             // right
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * -1, transform.localScale.y, transform.localScale.z);
+            hpBar.transform.localScale = new Vector3(-1f * Mathf.Abs(hpBar.transform.localScale.x), hpBar.transform.localScale.y, hpBar.transform.localScale.z);
         } else {
             // left
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            hpBar.transform.localScale = new Vector3(1f * Mathf.Abs(hpBar.transform.localScale.x), hpBar.transform.localScale.y, hpBar.transform.localScale.z);
         }
     }
 }
