@@ -208,7 +208,7 @@ public class PlayerController : MonoBehaviour
         }
         horizontalMove = Input.GetAxisRaw("Horizontal");
         verticalMove = Input.GetAxisRaw("Vertical");
-        if (Input.GetButtonDown("Jump")) {
+        if (Input.GetButtonDown("Jump") && GameStateManager.Instance.GetState() == StateName.IWanna) {
             jumpInput = true;
         }
         if (Input.GetButtonDown("Fire1")) {
