@@ -1399,6 +1399,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &27685064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1737,6 +1738,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &40055536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2181,6 +2183,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &47521741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2536,6 +2539,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &62623843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3101,6 +3105,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &67224328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4107,6 +4112,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &84376604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4571,6 +4577,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &95682995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5131,6 +5138,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &104296537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6525,6 +6533,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &180794514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6816,6 +6825,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &185828940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7022,6 +7032,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &186150584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7265,6 +7276,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &187994296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7525,6 +7537,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &195097123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7971,6 +7984,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &202432553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8181,6 +8195,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &204739432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8521,6 +8536,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &214385796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9031,6 +9047,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &229819405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9394,6 +9411,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &236738031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9672,6 +9690,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &239808259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9987,6 +10006,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &245543108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10652,6 +10672,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &267188006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10848,6 +10869,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &269028083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11186,6 +11208,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &284617749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11889,6 +11912,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &312860896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12497,6 +12521,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &332262287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12804,6 +12829,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &344019708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13398,6 +13424,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &352456722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13552,6 +13579,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &354369742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14791,6 +14819,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &378301471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14987,6 +15016,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &379240825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15273,6 +15303,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &387301137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15737,6 +15768,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &400144475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16083,6 +16115,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &404569746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16469,6 +16502,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &408928696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17367,6 +17401,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &438893266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18099,6 +18134,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &452954159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18378,6 +18414,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &454449887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18662,6 +18699,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &454515982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19098,6 +19136,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &461518728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19294,6 +19333,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &462546418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19749,6 +19789,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &465366282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20004,6 +20045,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &465693957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20175,6 +20217,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &469037144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20624,6 +20667,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &477980498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20866,6 +20910,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &480417214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21244,6 +21289,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &490753623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21452,6 +21498,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &496074957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21891,6 +21938,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &505244610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22168,6 +22216,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &510373681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23487,6 +23536,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &554181548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23759,6 +23809,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &556680928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24078,6 +24129,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &559820501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24575,6 +24627,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &575672610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25517,6 +25570,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &608541255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26490,6 +26544,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &623381557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26994,6 +27049,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &630331740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27286,6 +27342,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &632578575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27839,6 +27896,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &648330966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28601,6 +28659,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &662778263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29068,6 +29127,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &672610291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29532,6 +29592,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &680797006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30066,6 +30127,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &710846927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30544,6 +30606,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &713895710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30820,6 +30883,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &716679631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31417,6 +31481,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &734923593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31923,6 +31988,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &747047836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32290,6 +32356,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &754375075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32503,6 +32570,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &755229457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33528,6 +33596,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &775772847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33888,6 +33957,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &783564635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34437,6 +34507,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &809627503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35062,6 +35133,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &832163354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36741,6 +36813,7 @@ MonoBehaviour:
   coolTime: 0.75
   rushingDistance: 5
   rushSpeed: 15
+  arrowHandler: {fileID: 0}
 --- !u!114 &859779041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37271,6 +37344,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &878858120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37788,6 +37862,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &900997463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900997464}
+  m_Layer: 0
+  m_Name: ArrowHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &900997464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900997463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1675802984}
+  m_Father: {fileID: 89567040}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &902090602
 GameObject:
   m_ObjectHideFlags: 0
@@ -37989,6 +38095,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &904952240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38985,6 +39092,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &921407694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40401,6 +40509,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &975014382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41165,6 +41274,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &993716418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41404,6 +41514,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1004071822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41713,6 +41824,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1017122024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41970,6 +42082,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1020189651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42780,6 +42893,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1042217124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43095,6 +43209,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1052599126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43415,6 +43530,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1056217828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43712,6 +43828,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1059851591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44157,6 +44274,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1069688179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44399,6 +44517,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1073878275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45084,6 +45203,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1083545943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45268,6 +45388,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1084467404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45809,6 +45930,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1095338323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46017,6 +46139,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1097289107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47048,6 +47171,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1127593325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48065,6 +48189,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1155054302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48654,6 +48779,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1166515226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49053,6 +49179,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1167704656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49622,6 +49749,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1186884816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50166,6 +50294,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1205156493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50473,6 +50602,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1212363091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50864,6 +50994,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1222934627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51165,6 +51296,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1231445066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51365,6 +51497,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1232014856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51793,6 +51926,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1236634973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52357,6 +52491,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1245609569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52963,6 +53098,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1261818607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53234,6 +53370,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1270021541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53534,6 +53671,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1275789643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53786,6 +53924,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1276618142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55004,6 +55143,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1320338870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56374,6 +56514,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1349494781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57363,6 +57504,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1376722952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57848,6 +57990,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1388104940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58587,6 +58730,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1425907160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59081,6 +59225,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1442452361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59666,6 +59811,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1451602599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60835,6 +60981,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1470787214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61104,6 +61251,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1476245822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61378,6 +61526,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1481862244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61763,6 +61912,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1491295039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61988,6 +62138,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1492450198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62348,6 +62499,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1494819844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63740,6 +63892,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1524850311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64277,6 +64430,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1536535439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65764,7 +65918,7 @@ RectTransform:
   m_Children:
   - {fileID: 2033509013}
   m_Father: {fileID: 89567040}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -66075,6 +66229,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1570569469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66640,6 +66795,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1592261303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67328,6 +67484,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1595463178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67643,6 +67800,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1597355804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67868,6 +68026,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1599540088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69355,6 +69514,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1675802983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1675802984}
+  - component: {fileID: 1675802985}
+  m_Layer: 0
+  m_Name: Arrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1675802984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675802983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 900997464}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1675802985
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675802983}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1680539971 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7078691976017289716, guid: f5bb5b3703876ba44b80c1d768ac9af3, type: 3}
@@ -69801,6 +70044,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1682066948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70124,6 +70368,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1684592461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70538,6 +70783,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1691804336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70985,6 +71231,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1695834247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71249,6 +71496,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1705446598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71544,6 +71792,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1707026729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72031,6 +72280,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1713735378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72223,6 +72473,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1730815288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72724,6 +72975,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1737025906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73444,6 +73696,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1760328283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73751,6 +74004,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1765191569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73993,6 +74247,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1765221743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74228,6 +74483,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1773622098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74763,6 +75019,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1784217252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76043,6 +76300,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1816301995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76386,6 +76644,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1823253791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76594,6 +76853,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1824904525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77026,6 +77286,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1838374414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79353,6 +79614,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1930966322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79636,6 +79898,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1932230481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81332,6 +81595,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1978597789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81694,6 +81958,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1983893565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81890,6 +82155,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &1987759256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82238,6 +82504,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2002312164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82535,6 +82802,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2008011416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83107,6 +83375,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2013878115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83983,6 +84252,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2036785818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84238,6 +84508,7 @@ MonoBehaviour:
   coolTime: 0.75
   rushingDistance: 5
   rushSpeed: 15
+  arrowHandler: {fileID: 0}
 --- !u!114 &2038750440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84683,6 +84954,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2047998930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84947,6 +85219,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2048474297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85547,6 +85820,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2066650344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85774,6 +86048,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2070614870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85902,6 +86177,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2074033093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86174,6 +86450,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2081152856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87394,6 +87671,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2099061148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87684,6 +87962,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2102562059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88287,6 +88566,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2124871232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88521,6 +88801,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2130092889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88956,6 +89237,7 @@ MonoBehaviour:
   coolTime: 0
   rushingDistance: 0
   rushSpeed: 0
+  arrowHandler: {fileID: 0}
 --- !u!114 &2139219326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89178,6 +89460,14 @@ PrefabInstance:
       propertyPath: hpBar
       value: 
       objectReference: {fileID: 1563057323}
+    - target: {fileID: 7078691976017289615, guid: f5bb5b3703876ba44b80c1d768ac9af3, type: 3}
+      propertyPath: coolTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078691976017289615, guid: f5bb5b3703876ba44b80c1d768ac9af3, type: 3}
+      propertyPath: arrowHandler
+      value: 
+      objectReference: {fileID: 900997463}
     - target: {fileID: 7078691976017289716, guid: f5bb5b3703876ba44b80c1d768ac9af3, type: 3}
       propertyPath: m_Name
       value: Key

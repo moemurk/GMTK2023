@@ -13,6 +13,7 @@ public class MoveIsaac : MonoBehaviour
     [Header("Rush")] public float coolTime;
     public float rushingDistance;
     public float rushSpeed;
+    public GameObject arrowHandler;
     private float remainCoolTime;
     private bool isRushing;
     private Vector3 rushDirection;
@@ -39,8 +40,15 @@ public class MoveIsaac : MonoBehaviour
 
     public void Move()
     {
-        if (!activated) {
+        // Regardless activate state when rushing
+        if (!activated && !isRushing) {
+            if (arrowHandler && arrowHandler.activeSelf == true) {
+                arrowHandler.SetActive(false);
+            }
             return;
+        }
+        if (arrowHandler && arrowHandler.activeSelf == false) {
+            arrowHandler.SetActive(true);
         }
         switch(moveType) {
             case MovetypeISaac.Incline:
@@ -66,6 +74,10 @@ public class MoveIsaac : MonoBehaviour
 
     private void MoveRush()
     {
+        if (arrowHandler) {
+            float angle = (Mathf.Atan2(rushDirection.y, rushDirection.x) / Mathf.PI * 180) - 90;
+            arrowHandler.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+        }
         if (isRushing) {
             Vector3 targetPos = rushDirection * rushSpeed * Time.deltaTime * 10f + transform.position;
             Debug.DrawLine(transform.position, targetPos, Color.red, 0.1f);
@@ -82,11 +94,11 @@ public class MoveIsaac : MonoBehaviour
         } else {
             // only cal time when rushing is over
             remainCoolTime -= Time.deltaTime;
+            rushDirection = (GameStateManager.Instance.player.transform.position - transform.position).normalized;
             if (remainCoolTime <= 0f) {
                 Debug.Log("Start to Rush!");
                 remainCoolTime = coolTime;
                 isRushing = true;
-                rushDirection = (GameStateManager.Instance.player.transform.position - transform.position).normalized;
                 rushStartPoint = transform.position;
                 if (animator) {
                     animator.SetBool("IsWalking", true);
